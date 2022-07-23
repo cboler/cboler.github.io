@@ -5,7 +5,7 @@ minima:
   social_links:
     github: cboler
     linkedin: christopher-boler-816422139
-    stackoverflow: 359317/cboler
+    stackoverflow: cboler
 exclude:
   - 404.md
   - README.md
@@ -16,3 +16,6 @@ description: >
   Software Developer, 
   Learner
 email: christopher.boler@gmail.com
+author:
+  name: Chris Boler
+  email: "christopher.boler@gmail.com"
