@@ -1,1 +1,18 @@
-theme: jekyll-theme-minimal
+theme: minima
+google_analytics: G-W33X68MWKZ
+minima:
+  skin: dark
+  social_links:
+    github: cboler
+    linkedin: christopher-boler-816422139
+    stackoverflow: 359317/cboler
+exclude:
+  - 404.md
+  - README.md
+  
+title: Chris Boler
+description: >
+  Computer Scientist,
+  Software Developer, 
+  Learner
+email: christopher.boler@gmail.com
