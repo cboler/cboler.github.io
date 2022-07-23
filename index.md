@@ -1,8 +1,8 @@
 ---
 layout: home
+title: Welcome
 ---
 
-# Welcome
 
 ### Hi there 👋
 
