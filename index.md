@@ -1,3 +1,7 @@
+---
+layout: home
+---
+
 ### Hi there 👋
 
 I'm Chris (He, Him). I'm a dad; I've got a cat, a dog, and two hamsters that I care for, along with my amazing wife.
