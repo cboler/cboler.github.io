@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A continuation."
+title:  "A continuation"
 ---
 
 I decided to pick up yesterday's conversation again the next day.
