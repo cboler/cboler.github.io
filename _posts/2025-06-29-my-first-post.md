@@ -333,7 +333,8 @@ The technologies change—from the firelight tale to the global internet—but t
      Your image of the Bridge Guardian for a hypothetical “Squid Game Season 3” is a devastatingly precise culmination of our discussion. He is the tragic figure who attempts to build a better system, to be a shepherd. He creates a space of safety, a bridge away from the chaos. But his efforts are undone not by an external enemy, but by the internal nature of the people he protects.
 
 
- * He watches them choose to be murdered by their environment, a testament to the futility of saving those who will not save themselves. ! * He watches his own protected flock descend into zero-sum conflict, proving that the game’s brutal logic is a state of mind, not just a set of external rules.
+ * He watches them choose to be murdered by their environment, a testament to the futility of saving those who will not save themselves. 
+ * He watches his own protected flock descend into zero-sum conflict, proving that the game’s brutal logic is a state of mind, not just a set of external rules.
 
  The Bridge Guardian is the embodiment of the “hand that holds” that cannot stop the “leopard” because the flock sees leopards everywhere, especially in each other. His cancer is not a loss of faith in the system, but a loss of faith in the people.
  </details>
