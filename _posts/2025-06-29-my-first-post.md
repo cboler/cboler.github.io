@@ -4,7 +4,7 @@ title:  "A conversation with Gemini about Squid Game"
 ---
 
 # A conversation with Gemini 2.5 Pro
-I had a conversation with Gemini while watching [Squid Game Season 3](https://en.wikipedia.org/wiki/Squid_Game_season_3)
+I had a conversation with Gemini while watching [Squid Game Season 3](https://en.wikipedia.org/wiki/Squid_Game_season_3) that touched on [semantic paradoila](https://www.psychologytoday.com/us/blog/the-digital-self/202506/ai-and-our-need-to-believe). The conversation turned into an inquest to shine a light on the nature of humankind's newest tool.
 
 I will add spoiler tags, but ultimately, you’re on your own. I found it interesting to probe definitions and reflect on the nature of a tool that can talk back.
 
