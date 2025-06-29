@@ -3,7 +3,6 @@ layout: post
 title:  "A continuation."
 ---
 
-# A Continuation
 I decided to pick up yesterday's conversation again the next day.
 
 ## Me:
