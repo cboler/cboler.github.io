@@ -5,8 +5,8 @@ permalink: /about.html
 ---
 
 ## Skills
-AWS, GCP, JavaScript (AngularJS, Angular, jQuery, EXTJS 3+, NodeJS, Leaflet, OpenLayers), CSS (Bootstrap,
-SASS, LESS), C# (.NET Framework 2+, .NET Core), SQL, GIT, YAML, Docker, Java, Kotlin, Python, C++ (Qt)
+Azure, AWS, GCP, JavaScript (AngularJS, Angular, jQuery, EXTJS 3+, NodeJS, Leaflet, OpenLayers), CSS (Bootstrap,
+SASS, LESS), C# (.NET Framework 2+, .NET Core), SQL, GIT, YAML, Powershell, Docker, Java, Kotlin, Python, C++ (Qt)
 
 ## Education
 ### Bachelor of Science 2009
