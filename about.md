@@ -28,7 +28,7 @@ Information Security (Cyber).
 Information Security (Cyber), and Human Computer Interaction.
 
 ## Experience
-I have over 10 years of federal service, and {{ 'now' | date: '%Y' | plus: -2008 }} years of industry experience.
+I have over 13 years of federal service, and {{ 'now' | date: '%Y' | plus: -2008 }} years of industry experience.
 
 ## Affiliations
 - Association of Computing Machinery – Charter member of the first professional Mississippi chapter.
