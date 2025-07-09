@@ -6,10 +6,10 @@ github_username: cboler
 linkedin_username: christopher-boler-816422139
 stackoverflow_username: cboler
 exclude:
-  - 404.md
   - README.md
 header_pages:
   - about.md
+  - resume.md
 title: Chris Boler
 description: >
   Computer Scientist,
