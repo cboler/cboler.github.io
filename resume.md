@@ -30,7 +30,7 @@ A highly experienced and versatile computer scientist with a career spanning fed
 **Software Engineer II** | Rocket Mortgage | Detroit, MI (Remote)
 *November 2018 – October 2022*
 * Played a pivotal role in the architecture and development of enterprise-scale microservices as a senior member of the engineering squad.
-* Spearheaded the successful migration of on-premise services to a secure AWS VPC using Terraform and the AWS console.
+* Spearheaded the successful migration of on-premises services to a secure AWS VPC using Terraform and the AWS console.
 * Championed and integrated new technologies and standards, including the implementation of automated CI/CD pipelines with quality gates using SonarQube and Snyk.
 * Provided extensive code reviews and served as a mentor to team members on best practices for software quality, scalability, and maintainability.
 
