@@ -1,4 +1,10 @@
-# Christopher Boler
+
+---
+layout: page
+title: CV
+permalink: /resume.html
+---
+
 Madison, AL 35758 · (662) 312-8488 · christopher.boler@gmail.com · [linkedin.com/in/christopher-boler](https://www.linkedin.com/in/christopher-boler-816422139) · [cboler.github.io](https://cboler.github.io)
 
 ### Professional Summary
@@ -6,8 +12,8 @@ A highly experienced and versatile computer scientist with a career spanning fed
 
 ---
 ### Technical Skills
-* **Languages:** AWS, JavaScript (AngularJS, jQuery, NodeJS), C, C++, C#, Java, Python, PERL, SQL, TSQL, PLSQL, HTML, CSS (Bootstrap, SASS, LESS), YAML
-* **Cloud & DevOps:** Auth0, Ping, GIT, LINQ, AWS, Terraform, Grafana, Splunk, Cloudwatch, AWS XRay, Snyk, SonarQube
+* **Languages:** AWS, JavaScript (AngularJS, jQuery, NodeJS), C, C++, C#, Java, Python, PERL, SQL, TSQL, PLSQL, HTML, CSS (Bootstrap, SASS, LESS), PowerShell, YAML
+* **Cloud & DevOps:** Auth0, Ping, GIT, LINQ, AWS, Terraform, Grafana, Splunk, Cloudwatch, AWS XRay, Snyk, SonarQube, GitLab CI/CD
 * **Databases:** Microsoft SQL Server, WMS
 * **Tools & Platforms:** Microsoft Visual Studio, IDEA Intellij, Android Studio, Visual Studio Code, Active Directory, ESRI ArcServer, ESRI ArcDesktop
 
@@ -15,9 +21,10 @@ A highly experienced and versatile computer scientist with a career spanning fed
 ### Experience
 **Computer Scientist** | USACE ERDC, Construction Engineering Research Laboratory (CERL) | Remote
 *October 2022 – Present*
-* Architects and develops software solutions in support of construction engineering research and development projects.
-* Manages project timelines and deliverables in a scientific and engineering environment.
-* Applies modern software development best practices to research-focused initiatives.
+* Implemented and maintain DevSecOps CI/CD pipelines for GitLab runners using PowerShell to automate builds, testing, and deployments.
+* Played a key role in achieving a full Authority to Operate (ATO) for a primary software system by successfully navigating the Risk Management Framework (RMF) process.
+* Drives full-lifecycle software development, including implementing new application features, resolving complex bugs, and executing major Angular version upgrades.
+* Serves as an informal agile coach for the development team, mentoring members and streamlining practices to improve team velocity.
 
 **Software Engineer II** | Rocket Mortgage | Detroit, MI (Remote)
 *November 2018 – October 2022*
@@ -54,16 +61,4 @@ A highly experienced and versatile computer scientist with a career spanning fed
 
 ---
 ### Publications
-* Report Number: ERDC/ITL TR-14-1, Title: A Procedure for Predicting the Deterioration of Steel Hydraulic Structures to Enhance their Maintenance, Management, and Rehabilitation
-* 85 MORS Symposium: Collaborative, Concurrent Joint Planning in a Geospatially Enabled Environment ID: 19556
-* 84 MORS Symposium: Operations Research in Sustainability and Logistics, ID: 377, Title: Logistics Planning in the A2AD Environment
-* 83 MORS Symposium: PLANS (Planning Logistics Analysis Network System) Training Scenario Use Case Exploring Force Projection
-* Proceedings of the 2016 Industrial and Systems Engineering Research Conference H. Yang, Z. Kong, and MD Sarder, eds.
-
----
-### Awards & Certifications
-* Commander's Award for Civilian Service: 4 January 2017
-* Achievement Medal for Civilian Service: 17 December 2015
-* Achievement Medal for Civilian Service: 10 July 2012
-* CompTIA Security+
-* Information Assurance Professional Certificate (Equivalent to NSTISSI Standard 4011 Certification)
+* Report Number: ERDC/ITL TR-14-1, Title: A Procedure for Predicting the Deterioration of Steel Hydraulic Structures to Enhance their Maintenance, Management,
