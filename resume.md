@@ -1,10 +1,10 @@
 ---
 layout: page
-title: CV
+title: CB's CV
 permalink: /resume.html
 ---
 
-# CB's CV
+# Christopher Boler
 
 Madison, AL 35758 · (662) 312-8488 · christopher.boler@gmail.com · [linkedin.com/in/christopher-boler](https://www.linkedin.com/in/christopher-boler-816422139) · [cboler.github.io](https://cboler.github.io)
 
