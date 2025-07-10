@@ -94,9 +94,9 @@ Louisville, MS | Nov 2004 – Jun 2007
 
 ## EDUCATION
 
-* Master of Science in Computer ScienceMississippi State University | GPA: 4.0 | 2014  Focus: Artificial Intelligence, Information Security, Human-Computer Interaction
+Master of Science in Computer ScienceMississippi State University | GPA: 4.0 | 2014  Focus: Artificial Intelligence, Information Security, Human-Computer Interaction
 
-* Bachelor of Science in Computer ScienceMississippi State University | GPA: 3.49 | 2009 | Cum Laude
+Bachelor of Science in Computer ScienceMississippi State University | GPA: 3.49 | 2009 | Cum Laude
 
 * Certifications: CompTIA Security+, NSTISSI 4011 Equivalent, BAI RMF (In-depth), CJLOTS, STIG Implementation
 
@@ -114,4 +114,4 @@ Louisville, MS | Nov 2004 – Jun 2007
 
 * Achievement Medal for Civilian Service (2012, 2015)
 
-* ACM Charter Member | Upsilon Pi Epsilon | Phi Kappa Phi | MORS Junior Analyst
+ACM Charter Member | Upsilon Pi Epsilon | Phi Kappa Phi | MORS Junior Analyst
