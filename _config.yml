@@ -1,4 +1,7 @@
-theme: minima
+remote_theme: jekyll/minima 
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme
 google_analytics: G-W33X68MWKZ
 minima:
   skin: dark
@@ -6,10 +9,10 @@ github_username: cboler
 linkedin_username: christopher-boler-816422139
 stackoverflow_username: cboler
 exclude:
+  - 404.md
   - README.md
 header_pages:
   - about.md
-  - resume.md
 title: Chris Boler
 description: >
   Computer Scientist,
