@@ -4,62 +4,114 @@ title: CB's CV
 permalink: /resume.html
 ---
 
-# Christopher Boler
+# CHRISTOPHER BOLER
 
-Madison, AL 35758 · (662) 312-8488 · christopher.boler@gmail.com · [linkedin.com/in/christopher-boler](https://www.linkedin.com/in/christopher-boler-816422139) · [cboler.github.io](https://cboler.github.io)
+Senior Software Engineer & Architect | Cloud-Native Solutions Expert | Azure, AWS, GCP | AI & Security Focus
 
-### Professional Summary
-A highly experienced and versatile computer scientist with a career spanning federal research and development and enterprise-level private sector software engineering. Possesses a Master's degree in Computer Science and a proven ability to architect, develop, and deploy robust software solutions. Demonstrates expertise in full-stack development, cloud infrastructure, secure coding practices, and program management. An adaptable problem-solver dedicated to leveraging technology to solve complex challenges.
+## PROFESSIONAL SUMMARY
 
----
-### Technical Skills
-* **Languages:** AWS, JavaScript (AngularJS, jQuery, NodeJS), C, C++, C#, Java, Python, PERL, SQL, TSQL, PLSQL, HTML, CSS (Bootstrap, SASS, LESS), PowerShell, YAML
-* **Cloud & DevOps:** Auth0, Ping, GIT, LINQ, AWS, Terraform, Grafana, Splunk, Cloudwatch, AWS XRay, Snyk, SonarQube, GitLab CI/CD
-* **Databases:** Microsoft SQL Server, WMS
-* **Tools & Platforms:** Microsoft Visual Studio, IDEA Intellij, Android Studio, Visual Studio Code, Active Directory, ESRI ArcServer, ESRI ArcDesktop
+Innovative and adaptable senior developer with 15+ years of experience bridging federal research, enterprise-scale engineering, and cloud-native architecture. Adept at translating complex technical challenges into scalable, secure, and user-centric software solutions. Proven ability to lead cross-functional Agile teams, drive modernization efforts in cloud environments (Azure, AWS, GCP), and deliver mission-critical applications that meet rigorous compliance standards. Passionate about creating measurable impact through elegant design, thoughtful mentoring, and robust infrastructure automation. Seeking to apply deep technical and strategic expertise in a Solution Developer role with IBM.
 
----
-### Experience
-**Computer Scientist** | USACE ERDC, Construction Engineering Research Laboratory (CERL) | Remote
-*October 2022 – Present*
-* Implemented and maintain DevSecOps CI/CD pipelines for GitLab runners using PowerShell to automate builds, testing, and deployments.
-* Played a key role in achieving a full Authority to Operate (ATO) for a primary software system by successfully navigating the Risk Management Framework (RMF) process.
-* Drives full-lifecycle software development, including implementing new application features, resolving complex bugs, and executing major Angular version upgrades.
-* Serves as an informal agile coach for the development team, mentoring members and streamlining practices to improve team velocity.
+## TECHNICAL SKILLS
 
-**Software Engineer II** | Rocket Mortgage | Detroit, MI (Remote)
-*November 2018 – October 2022*
-* Played a pivotal role in the architecture and development of enterprise-scale microservices as a senior member of the engineering squad.
-* Spearheaded the successful migration of on-premises services to a secure AWS VPC using Terraform and the AWS console.
-* Championed and integrated new technologies and standards, including the implementation of automated CI/CD pipelines with quality gates using SonarQube and Snyk.
-* Provided extensive code reviews and served as a mentor to team members on best practices for software quality, scalability, and maintainability.
+* Languages & Frameworks: C#, JavaScript (AngularJS/Angular 17, Node.js), Python, Java, SQL, T-SQL, PL/SQL, LINQ, C++, PERL, HTML/CSS (SASS/LESS/Bootstrap)
 
-**Computer Scientist (Federal)** | USACE ERDC, Information Technology Laboratory (ITL) | Vicksburg, MS
-*May 2008 – November 2018*
-* Directed a $2.5 million Military Engineering program as acting Program Manager, leading a multidisciplinary team.
-* Served as acting Branch Chief for the Software Engineering and Evaluation Branch, managing the full software development lifecycle and overseeing engineering personnel.
-* Performed system analysis with an emphasis on data integration and user interface development.
-* Developed software for implementation on web servers, desktops, and mobile devices.
-* Applied Secure Technical Implementation Guides (STIGs) to third-party products and ensured compliance with government software standards.
+* Cloud Platforms: Microsoft Azure (ATO / RMF Compliant Deployments), AWS (VPC, CloudWatch, X-Ray), Google Cloud Platform
 
-**Software Engineer** | Clear Orbit | Starkville, MS
-*June 2007 – June 2008*
-* Developed PLSQL to condense Oracle Applications for use on handheld devices for supply chain logistics.
-* Debugged and troubleshot client issues in a detailed and conscientious manner.
+* DevOps & CI/CD: YAML, Terraform, Git, PowerShell, SonarQube, Snyk, Grafana, Jenkins, Blue/Green Deployments
 
----
-### Education
-**Master of Science, Computer Science** | 2014
-*Mississippi State University*
-* GPA: 4.0 of a 4.0 maximum
-* Coursework focused on artificial intelligence, information security, and human-computer interaction.
+* Tools & Systems: Visual Studio, VS Code, IntelliJ, Splunk, Active Directory, Microsoft SQL Server, ArcServer, ArcDesktop
 
-**Bachelor of Science, Computer Science** | 2009
-*Mississippi State University*
-* Honors: Cum Laude
-* GPA: 3.49 of a 4.0 maximum
-* Recipient of OPM Scholarship for Service (SFS).
+* Authentication & Security: Auth0, Ping Identity, Secure Technical Implementation Guides (STIGs), NIST 800-53, CompTIA Security+
 
----
-### Publications
-* Report Number: ERDC/ITL TR-14-1, Title: A Procedure for Predicting the Deterioration of Steel Hydraulic Structures to Enhance their Maintenance, Management,
+* Methodologies: Agile (Scrum), DevSecOps, Human-Centered Design
+
+## PROFESSIONAL EXPERIENCE
+
+### Senior Computer Scientist | USACE ERDC CERL
+
+Champaign, IL | Oct 2022 – Present
+
+* Senior developer on the Enterprise Sustainment Management System (ESMS), hosted in Army's Azure environment, recently awarded Authority to Operate (ATO) after passing RMF inspection.
+
+* Mentor junior developers and act as informal Agile coach across the development team.
+
+* Contribute to CI/CD automation using PowerShell and Azure DevOps; emphasize secure, repeatable deployments.
+
+* Architect scalable .NET Core and Angular 17 solutions for mission-critical sustainment and funding applications.
+
+* Interface directly with stakeholders to refine user stories and acceptance criteria aligned with mission-readiness.
+
+* Champion security and performance best practices, contributing to system resilience and reliability.
+
+### Senior Software Engineer | Rocket Mortgage / Quicken Loans
+
+Detroit, MI | Nov 2018 – Oct 2022
+
+* Led migration of legacy on-prem services to AWS VPC using Terraform and AWS Console, improving scalability and reducing infrastructure cost.
+
+* Modernized authentication systems from Ping to Auth0 across multiple services, improving user experience and security posture.
+
+* Designed and implemented microservices architecture supporting core enterprise functions with near-zero downtime.
+
+* Built out health monitoring using Grafana and CI/CD pipelines (YAML), integrating security gates via Snyk and SonarQube.
+
+* Performed in-depth root cause analyses using Splunk, CloudWatch, and AWS X-Ray; reduced incident response time by 40%.
+
+* Authored standardized incident response documentation now used across the engineering team.
+
+* Collaborated across teams to review, refactor, and harden code for performance, scalability, and maintainability.
+
+### Computer Scientist | USACE ERDC ITL, CEERD-IE-S
+
+Vicksburg, MS | May 2008 – Nov 2018
+
+* Acted as deputy Program Manager, Program Manager, and Branch Chief at varying times.
+
+* Supported multidisciplinary software development for agency-wide tools and internal systems.
+
+* Ensured compliance with STIGs and NIST SP 800-53 guidance across major platforms.
+
+* Conducted stakeholder interviews and systems analysis to define high-impact solution architecture.
+
+* Delivered applications spanning web, desktop, and mobile platforms using C#, JavaScript, and Java.
+
+* Created test plans, acceptance criteria, and technical documentation to support robust, maintainable systems.
+
+### Software Engineer | Clear Orbit
+
+Starkville, MS | Jun 2007 – Jun 2008
+
+* Condensed Oracle ERP applications for handheld Telxon devices, optimizing supply chain workflows.
+
+* Troubleshot, patched, and deployed critical updates to enterprise logistics systems.
+
+### Shipping Clerk | Taylor Machine Works
+
+Louisville, MS | Nov 2004 – Jun 2007
+
+* Packaged and coordinated international shipments for heavy machinery parts with precision and care.
+
+## EDUCATION
+
+* Master of Science in Computer ScienceMississippi State University | GPA: 4.0 | 2014  Focus: Artificial Intelligence, Information Security, Human-Computer Interaction
+
+* Bachelor of Science in Computer ScienceMississippi State University | GPA: 3.49 | 2009 | Cum Laude
+
+* Certifications: CompTIA Security+, NSTISSI 4011 Equivalent, BAI RMF (In-depth), CJLOTS, STIG Implementation
+
+## PUBLICATIONS & PRESENTATIONS
+
+* A Procedure for Predicting the Deterioration of Steel Hydraulic Structures (ERDC/ITL TR-14-1)
+
+* 83rd-85th MORS Symposiums (Topics: Force Projection, A2AD Logistics, Geospatial Planning)
+
+* 2016 Industrial and Systems Engineering Research Conference
+
+## AWARDS & AFFILIATIONS
+
+* Commander’s Award for Civilian Service (2017)
+
+* Achievement Medal for Civilian Service (2012, 2015)
+
+* ACM Charter Member | Upsilon Pi Epsilon | Phi Kappa Phi | MORS Junior Analyst
