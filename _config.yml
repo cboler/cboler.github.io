@@ -4,7 +4,7 @@ plugins:
   - jekyll-remote-theme
 google_analytics: G-W33X68MWKZ
 minima:
-  skin: dark
+  skin: solarized-dark
   social_links:
     - { platform: github,         url: "https://github.com/cboler", icon: github }
     - { platform: linkedin,       url: "https://www.linkedin.com/in/christopher-boler-816422139", icon: linkedin }
@@ -18,5 +18,6 @@ header_pages:
   - resume.md
 title: Chris Boler
 description: Computer Scientist, Software Developer, Learner
-email: christopher.boler@gmail.com
-author: Christopher Boler
+author:
+  email: christopher.boler@gmail.com
+  name: Christopher Boler
