@@ -13,6 +13,7 @@ exclude:
   - README.md
 header_pages:
   - about.md
+  - resume.md
 title: Chris Boler
 description: >
   Computer Scientist,

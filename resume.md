@@ -1,7 +1,7 @@
 ---
 layout: page
-title: CB's CV
-permalink: /resume.html
+title: Resume
+permalink: /resume/
 ---
 
 # CHRISTOPHER BOLER
