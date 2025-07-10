@@ -68,6 +68,8 @@ Vicksburg, MS | May 2008 – Nov 2018
 
 * Acted as deputy Program Manager, Program Manager, and Branch Chief at varying times.
 
+* Leadership Development Program graduate, levels (years) I and II.
+
 * Supported multidisciplinary software development for agency-wide tools and internal systems.
 
 * Ensured compliance with STIGs and NIST SP 800-53 guidance across major platforms.
@@ -94,7 +96,7 @@ Louisville, MS | Nov 2004 – Jun 2007
 
 ## EDUCATION
 
-**Master of Science in Computer Science** | Mississippi State University | GPA: 4.0 | 2014  Focus: Artificial Intelligence, Information Security, Human-Computer Interaction
+**Master of Science in Computer Science** | Mississippi State University | GPA: 4.0 | 2014 | Focus: Artificial Intelligence, Information Security, Human-Computer Interaction
 
 **Bachelor of Science in Computer Science** | Mississippi State University | GPA: 3.49 | 2009 | Cum Laude
 
