@@ -8,7 +8,7 @@ minima:
   social_links:
     - { platform: github,         url: "https://github.com/cboler", icon: github }
     - { platform: linkedin,       url: "https://www.linkedin.com/in/christopher-boler-816422139", icon: linkedin }
-    - { platform: stackoverflow,  url: "https://stackoverflow.com/users/359317/cboler", icon: stackoverflow }
+    - { platform: stackoverflow,  url: "https://stackoverflow.com/users/359317/cboler", icon: stack-overflow }
 
 exclude:
   - 404.md
