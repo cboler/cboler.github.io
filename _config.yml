@@ -6,9 +6,9 @@ google_analytics: G-W33X68MWKZ
 minima:
   skin: dark
   social_links:
-    - { platform: github,         url: "https://github.com/cboler" }
-    - { platform: linkedin,       url: "https://www.linkedin.com/in/christopher-boler-816422139" }
-    - { platform: stackoverflow,  url: "https://stackoverflow.com/users/359317/cboler" }
+    - { platform: github,         url: "https://github.com/cboler", icon: github }
+    - { platform: linkedin,       url: "https://www.linkedin.com/in/christopher-boler-816422139", icon: linkedin }
+    - { platform: stackoverflow,  url: "https://stackoverflow.com/users/359317/cboler", icon: stackoverflow }
 
 exclude:
   - 404.md
