@@ -14,17 +14,17 @@ Innovative and adaptable senior developer with 15+ years of experience bridging 
 
 ## TECHNICAL SKILLS
 
-* Languages & Frameworks: C#, JavaScript (AngularJS/Angular 17, Node.js), Python, Java, SQL, T-SQL, PL/SQL, LINQ, C++, PERL, HTML/CSS (SASS/LESS/Bootstrap)
+* **Languages & Frameworks:** C#, JavaScript (AngularJS/Angular 17, Node.js), Python, Java, SQL, T-SQL, PL/SQL, LINQ, C++, PERL, HTML/CSS (SASS/LESS/Bootstrap)
 
-* Cloud Platforms: Microsoft Azure (ATO / RMF Compliant Deployments), AWS (VPC, CloudWatch, X-Ray), Google Cloud Platform
+* **Cloud Platforms:** Microsoft Azure (ATO / RMF Compliant Deployments), AWS (VPC, CloudWatch, X-Ray), Google Cloud Platform
 
-* DevOps & CI/CD: YAML, Terraform, Git, PowerShell, SonarQube, Snyk, Grafana, Jenkins, Blue/Green Deployments
+* **DevOps & CI/CD:** YAML, Terraform, Git, PowerShell, SonarQube, Snyk, Grafana, Jenkins, Blue/Green Deployments
 
-* Tools & Systems: Visual Studio, VS Code, IntelliJ, Splunk, Active Directory, Microsoft SQL Server, ArcServer, ArcDesktop
+* **Tools & Systems:** Visual Studio, VS Code, IntelliJ, Splunk, Active Directory, Microsoft SQL Server, ArcServer, ArcDesktop
 
-* Authentication & Security: Auth0, Ping Identity, Secure Technical Implementation Guides (STIGs), NIST 800-53, CompTIA Security+
+* **Authentication & Security:** Auth0, Ping Identity, Secure Technical Implementation Guides (STIGs), NIST 800-53, CompTIA Security+
 
-* Methodologies: Agile (Scrum), DevSecOps, Human-Centered Design
+* **Methodologies:** Agile (Scrum), DevSecOps, Human-Centered Design
 
 ## PROFESSIONAL EXPERIENCE
 
@@ -94,11 +94,11 @@ Louisville, MS | Nov 2004 – Jun 2007
 
 ## EDUCATION
 
-Master of Science in Computer ScienceMississippi State University | GPA: 4.0 | 2014  Focus: Artificial Intelligence, Information Security, Human-Computer Interaction
+**Master of Science in Computer Science** | Mississippi State University | GPA: 4.0 | 2014  Focus: Artificial Intelligence, Information Security, Human-Computer Interaction
 
-Bachelor of Science in Computer ScienceMississippi State University | GPA: 3.49 | 2009 | Cum Laude
+**Bachelor of Science in Computer Science** | Mississippi State University | GPA: 3.49 | 2009 | Cum Laude
 
-* Certifications: CompTIA Security+, NSTISSI 4011 Equivalent, BAI RMF (In-depth), CJLOTS, STIG Implementation
+* **Certifications:** CompTIA Security+, NSTISSI 4011 Equivalent, BAI RMF (In-depth), CJLOTS, STIG Implementation
 
 ## PUBLICATIONS & PRESENTATIONS
 
