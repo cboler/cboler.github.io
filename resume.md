@@ -5,7 +5,6 @@ permalink: /resume/
 ---
 
 <style>
-/* Simple Wikipedia-style tooltip CSS */
 .tooltip {
   position: relative;
   cursor: pointer;
