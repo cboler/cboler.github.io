@@ -20,4 +20,4 @@ applyTo: '**'
     - Use appropriate headings and subheadings for better organization.
     - Include metadata for SEO optimization where applicable.
     - Use best practices for Jekyll and Liquid templating.
-    - Ensure that knowledge of (Jekyll)[https://jekyllrb.com/docs/], (Markdown)[https://www.markdownguide.org/getting-started/], and (Liquid)[https://liquidjs.com/tutorials/intro-to-liquid.html] documentation is applied in all code generation and content creation.
+    - Ensure that knowledge of (Jekyll)[https://jekyllrb.com/docs/], (Markdown)[https://www.markdownguide.org/getting-started/], and (Liquid)[https://liquidjs.com/tutorials/intro-to-liquid.html] documentation is up-to-date and applied in all code generation and content creation.

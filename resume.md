@@ -41,7 +41,7 @@ Senior Software Engineer & Architect \| Cloud-Native Solutions Expert \| Azure, 
 
 ## PROFESSIONAL SUMMARY
 
-Innovative and adaptable senior developer with 15+ years of experience bridging federal research, enterprise-scale engineering, and cloud-native architecture. Adept at translating complex technical challenges into scalable, secure, and user-centric software solutions. Proven ability to lead cross-functional Agile teams, drive modernization efforts in cloud environments (Azure, AWS, GCP), and deliver mission-critical applications that meet rigorous compliance standards. Passionate about creating measurable impact through elegant design, thoughtful mentoring, and robust infrastructure automation. Seeking to apply deep technical and strategic expertise in a Solution Developer role with IBM.
+Innovative and adaptable senior developer with 15+ years of experience bridging federal research, enterprise-scale engineering, and cloud-native architecture. Adept at translating complex technical challenges into scalable, secure, and user-centric software solutions. Proven ability to lead cross-functional Agile teams, drive modernization efforts in cloud environments (Azure, AWS, GCP), and deliver mission-critical applications that meet rigorous compliance standards. Passionate about creating measurable impact through elegant design, thoughtful mentoring, and robust infrastructure automation. Seeking to apply deep technical and strategic expertise.
 
 ## TECHNICAL SKILLS
 
@@ -95,7 +95,7 @@ Detroit, MI \| Nov 2018 – Oct 2022
 
 ### Computer Scientist | USACE ERDC ITL, CEERD-IE-S
 
-Vicksburg, MS \| May 2008 – Nov 2018
+<span title="I met best friend working here; well, we met my senior year of college. We were married in 2012.">Vicksburg, MS \| May 2008 – Nov 2018</span>
 
 * Acted as deputy Program Manager, Program Manager, and Branch Chief at varying times.
 
@@ -113,7 +113,7 @@ Vicksburg, MS \| May 2008 – Nov 2018
 
 ### Software Engineer | Clear Orbit
 
-Starkville, MS \| Jun 2007 – Jun 2008
+<span title="My first wife and I were divorced during my sophomore year of undergrad.">Starkville, MS \| Jun 2007 – Jun 2008</span>
 
 * Condensed Oracle ERP applications for handheld Telxon devices, optimizing supply chain workflows.
 
@@ -123,7 +123,7 @@ Starkville, MS \| Jun 2007 – Jun 2008
 
 <span title="My son was born 10 days from when I began my undergraduate degree in 2005.">Louisville, MS \| Nov 2004 – Jun 2007</span>
 
-* Packaged and coordinated international shipments for heavy machinery parts with precision and care.
+* <span title="This included building wooden crates.">Packaged</span> and coordinated international shipments for heavy machinery parts with precision and care.
 
 * Licensed forklift operator.
 
