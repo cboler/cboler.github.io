@@ -90,7 +90,7 @@ Starkville, MS \| Jun 2007 – Jun 2008
 
 ### Shipping Clerk | Taylor Machine Works
 
-Louisville, MS \| Nov 2004 – Jun 2007
+<span title="My son was born 10 days from when I began my undergraduate degree in 2005.">Louisville, MS \| Nov 2004 – Jun 2007</span>
 
 * Packaged and coordinated international shipments for heavy machinery parts with precision and care.
 
