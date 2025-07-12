@@ -2,7 +2,7 @@
 applyTo: '**'
 ---
 
-context:
+## Context:
     - This is a personal GitHub page for showcasing my projects and skills.
     - The content is primarily focused on my professional background, skills, and interests.
     - The site is built using Jekyll and hosted on GitHub Pages.
@@ -13,7 +13,7 @@ context:
     - Code snippets should be formatted for readability and clarity.
     - All content should be original or properly attributed if sourced from elsewhere.
 
-guidelines:
+## Guidelines:
     - Use clear and concise language.
     - Ensure all links are functional and point to relevant resources.
     - Maintain consistency in formatting across all pages.
