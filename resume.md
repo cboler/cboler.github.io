@@ -20,7 +20,6 @@ Innovative and adaptable senior developer with 15+ years of experience bridging 
 
 * **DevOps & CI/CD:** YAML, Terraform, Git, PowerShell, SonarQube, Snyk, Grafana, Jenkins, Blue/Green Deployments
 
-* **Tools & Systems:** Visual Studio, VS Code, IntelliJ, Splunk, Active Directory, Microsoft SQL Server, ArcServer, ArcDesktop
 * **Tools & Systems:** Visual Studio, VS Code, GitHub, GitHub Copilot, GitHub Agents, GitHub Workflows, GitHub Actions, LLM Prompting, IntelliJ, Splunk, Active Directory, Microsoft SQL Server, ArcServer, ArcDesktop
 
 * **Authentication & Security:** Auth0, Ping Identity, Secure Technical Implementation Guides (STIGs), NIST 800-53, CompTIA Security+
