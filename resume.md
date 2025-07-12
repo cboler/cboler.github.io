@@ -131,7 +131,7 @@ Starkville, MS \| Jun 2007 – Jun 2008
 
 **Bachelor of Science in Computer Science** \| Mississippi State University \| GPA: 3.49 \| 2009 \| Cum Laude
 
-* **Certifications:** CompTIA Security+, NSTISSI 4011 Equivalent, BAI RMF (In-depth), CJLOTS, STIG Implementation
+* **Certifications:** CompTIA Security+, NSTISSI 4011 Equivalent, BAI RMF (In-depth), STIG Implementation
 
 ## PUBLICATIONS & PRESENTATIONS
 
