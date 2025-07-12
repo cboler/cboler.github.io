@@ -16,8 +16,11 @@ exclude:
 header_pages:
   - about.md
   - resume.md
-title: Chris Boler
-description: Computer Scientist, Software Developer, Learner
+description: >
+ Computer Scientist, Software Developer, Learner
+ Please don't copy or reuse anything in `_posts` without permission and attribution.
+ Everything else is under the [MIT License](https://opensource.org/license/mit).
+
 author:
   email: christopher.boler@gmail.com
   name: Christopher Boler

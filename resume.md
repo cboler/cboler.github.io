@@ -6,7 +6,7 @@ permalink: /resume/
 
 # CHRISTOPHER BOLER
 
-Senior Software Engineer & Architect | Cloud-Native Solutions Expert | Azure, AWS, GCP | AI & Security Focus
+Senior Software Engineer & Architect \| Cloud-Native Solutions Expert \| Azure, AWS, GCP \| AI & Security Focus
 
 ## PROFESSIONAL SUMMARY
 
@@ -21,6 +21,7 @@ Innovative and adaptable senior developer with 15+ years of experience bridging 
 * **DevOps & CI/CD:** YAML, Terraform, Git, PowerShell, SonarQube, Snyk, Grafana, Jenkins, Blue/Green Deployments
 
 * **Tools & Systems:** Visual Studio, VS Code, IntelliJ, Splunk, Active Directory, Microsoft SQL Server, ArcServer, ArcDesktop
+* **Tools & Systems:** Visual Studio, VS Code, GitHub, GitHub Copilot, GitHub Agents, GitHub Workflows, GitHub Actions, LLM Prompting, IntelliJ, Splunk, Active Directory, Microsoft SQL Server, ArcServer, ArcDesktop
 
 * **Authentication & Security:** Auth0, Ping Identity, Secure Technical Implementation Guides (STIGs), NIST 800-53, CompTIA Security+
 
@@ -30,7 +31,7 @@ Innovative and adaptable senior developer with 15+ years of experience bridging 
 
 ### Senior Computer Scientist | USACE ERDC CERL
 
-Champaign, IL | Oct 2022 – Present
+Champaign, IL \| Oct 2022 – Present
 
 * Senior developer on the Enterprise Sustainment Management System (ESMS), hosted in Army's Azure environment, recently awarded Authority to Operate (ATO) after passing RMF inspection.
 
@@ -46,7 +47,7 @@ Champaign, IL | Oct 2022 – Present
 
 ### Senior Software Engineer | Rocket Mortgage / Quicken Loans
 
-Detroit, MI | Nov 2018 – Oct 2022
+Detroit, MI \| Nov 2018 – Oct 2022
 
 * Led migration of legacy on-prem services to AWS VPC using Terraform and AWS Console, improving scalability and reducing infrastructure cost.
 
@@ -64,7 +65,7 @@ Detroit, MI | Nov 2018 – Oct 2022
 
 ### Computer Scientist | USACE ERDC ITL, CEERD-IE-S
 
-Vicksburg, MS | May 2008 – Nov 2018
+Vicksburg, MS \| May 2008 – Nov 2018
 
 * Acted as deputy Program Manager, Program Manager, and Branch Chief at varying times.
 
@@ -82,7 +83,7 @@ Vicksburg, MS | May 2008 – Nov 2018
 
 ### Software Engineer | Clear Orbit
 
-Starkville, MS | Jun 2007 – Jun 2008
+Starkville, MS \| Jun 2007 – Jun 2008
 
 * Condensed Oracle ERP applications for handheld Telxon devices, optimizing supply chain workflows.
 
@@ -90,15 +91,15 @@ Starkville, MS | Jun 2007 – Jun 2008
 
 ### Shipping Clerk | Taylor Machine Works
 
-Louisville, MS | Nov 2004 – Jun 2007
+Louisville, MS \| Nov 2004 – Jun 2007
 
 * Packaged and coordinated international shipments for heavy machinery parts with precision and care.
 
 ## EDUCATION
 
-**Master of Science in Computer Science** | Mississippi State University | GPA: 4.0 | 2014 | Focus: Artificial Intelligence, Information Security, Human-Computer Interaction
+**Master of Science in Computer Science** \| Mississippi State University \| GPA: 4.0 \| 2014 \| Focus: Artificial Intelligence, Information Security, Human-Computer Interaction
 
-**Bachelor of Science in Computer Science** | Mississippi State University | GPA: 3.49 | 2009 | Cum Laude
+**Bachelor of Science in Computer Science** \| Mississippi State University \| GPA: 3.49 \| 2009 \| Cum Laude
 
 * **Certifications:** CompTIA Security+, NSTISSI 4011 Equivalent, BAI RMF (In-depth), CJLOTS, STIG Implementation
 
