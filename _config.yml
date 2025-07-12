@@ -19,7 +19,7 @@ header_pages:
 description: >
  Computer Scientist, Software Developer, Learner
  Please don't copy or reuse anything in _posts without permission and attribution.
- Everything else is under the MIT License: https://opensource.org/license/mit
+ Everything else is under the {{ "<a href='https://opensource.org/license/mit' target='_blank'>MIT License</a>" | raw }}
 
 author:
   email: christopher.boler@gmail.com
