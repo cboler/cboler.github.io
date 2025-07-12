@@ -16,7 +16,7 @@ exclude:
 header_pages:
   - about.md
   - resume.md
-description: >
+description: |
  Computer Scientist, Software Developer, Learner
  Please don't copy or reuse anything in _posts without permission and attribution.
  Everything else is under the MIT License.
