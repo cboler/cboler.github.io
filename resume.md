@@ -117,4 +117,4 @@ Louisville, MS \| Nov 2004 – Jun 2007
 
 * Achievement Medal for Civilian Service (2012, 2015)
 
-ACM Charter Member | Upsilon Pi Epsilon | Phi Kappa Phi | MORS Junior Analyst
+ACM Charter Member \| Upsilon Pi Epsilon \| Phi Kappa Phi \| MORS Junior Analyst
