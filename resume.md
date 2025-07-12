@@ -125,6 +125,8 @@ Starkville, MS \| Jun 2007 – Jun 2008
 
 * Packaged and coordinated international shipments for heavy machinery parts with precision and care.
 
+* Licensed forklift operator.
+
 ## EDUCATION
 
 **Master of Science in Computer Science** \| Mississippi State University \| GPA: 4.0 \| 2014 \| Focus: Artificial Intelligence, Information Security, Human-Computer Interaction
