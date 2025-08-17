@@ -16,7 +16,7 @@ I chose a game that a friend and myself designed many years ago while working in
 
 
 
-\[Check out the repository and watch the progress.](https://github.com/cboler/war-of-attrition-game) 
+[Check out the repository and watch the progress](https://github.com/cboler/war-of-attrition-game) 
 
 
 
@@ -28,7 +28,7 @@ Watch the commit progress and pull requests made by the agent as it progresses t
 
 
 
-Try out the game \[here](https://cboler.github.io/war-of-attrition-game/)!
+Try out the game [here](https://cboler.github.io/war-of-attrition-game/)!
 
 
 
