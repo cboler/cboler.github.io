@@ -10,6 +10,8 @@ minima:
     - { platform: linkedin,       url: "https://www.linkedin.com/in/christopher-boler-816422139", icon: linkedin }
     - { platform: stackoverflow,  url: "https://stackoverflow.com/users/359317/cboler", icon: stack-overflow }
 
+include:
+  - ".well-known"
 exclude:
   - 404.md
   - README.md
