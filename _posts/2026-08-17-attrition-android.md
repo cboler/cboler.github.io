@@ -24,7 +24,7 @@ A lot of people helped me get it there.
 
 I owe a huge thank-you to the people who played builds, found bugs, questioned decisions, endured unfinished interfaces, and generally served as guinea pigs while Attrition turned into something resembling a finished game:
 
-**Lacy Boler, Aidan Boler, Steven Bunkley, Cassandra Pittman, Amber Fermo, Vince Fermo, Joshua Reed, Brooke Walker, and Kevin Walker.**
+**Lacy Boler, Aidan Boler, Kieth "Blake" Blakeney, Kelsey Stanley, Steven Bunkley, Cassandra Pittman, Amber Fermo, Vince Fermo, John Horton, Joe Maclean, Joshua Reed, Brooke Walker, and Kevin Walker.**
 
 Thank you for the testing, feedback, patience, and willingness to play a card game whose rules and interface occasionally changed underneath you.
 
