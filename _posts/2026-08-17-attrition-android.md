@@ -2,7 +2,7 @@
 
 layout: post
 
-title:  "War of Attrition Game, on Android"
+title:  "War of Attrition Game, on Android!"
 
 ---
 
@@ -14,7 +14,7 @@ Attrition is based on a physical card game that started years ago with a deck of
 
 The basic idea is simple: it’s War, except there are decisions to make.
 
-What grew out of that has become something considerably more elaborate—campaigns, achievements, opponents with personalities, a field manual, statistics, bits of history, entirely too many cheese jokes, and a lot of little details that probably nobody needed me to spend this much time thinking about.
+What grew out of that has become something considerably more elaborate—campaigns, achievements, opponents with personalities, a field manual, statistics, bits of history, entirely too many cheesey jokes, and a lot of little details that probably nobody needed me to spend this much time thinking about.
 
 But that’s also the point.
 
@@ -45,5 +45,7 @@ I hope people enjoy the game. I hope somebody gets overly invested in saving a t
 Mostly, I’m just glad it exists.
 
 And I’m glad I finally get to share it.
+
+When the game is finally available for open testing, I'll share the Play Store link here.
 
 — Chris
