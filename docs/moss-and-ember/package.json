@@ -1,0 +1,19 @@
+{
+  "name": "moss-and-ember",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "An original woodland action RPG, built with Canvas and Web Audio.",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "test:browser": "node scripts/browser-smoke.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0"
+  }
+}

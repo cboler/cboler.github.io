@@ -1,0 +1,6 @@
+
+# Local Jekyll and Moss & Ember development output
+_site/
+.jekyll-cache/
+docs/moss-and-ember/node_modules/
+docs/moss-and-ember/.test-artifacts/

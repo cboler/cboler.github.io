@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101c1a">
+  <meta name="description" content="Moss & Ember — an original woodland action adventure. Explore a forgotten forest, awaken its shrines, and face what waits beneath the roots.">
+  <title>Moss & Ember — A Woodland Adventure</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="site-header">
+      <a class="wordmark" href="./" aria-label="Moss and Ember home"><span class="brand-sigil" aria-hidden="true">✧</span> MOSS <i>&</i> EMBER</a>
+      <a class="header-description" href="../../">← BACK TO THE BLOG</a>
+      <span class="header-status"><span></span> A WORLD WAITING TO WAKE</span>
+    </header>
+
+    <main class="game-layout">
+      <div class="frame-corner corner-tl" aria-hidden="true"></div>
+      <div class="frame-corner corner-tr" aria-hidden="true"></div>
+      <div class="frame-corner corner-bl" aria-hidden="true"></div>
+      <div class="frame-corner corner-br" aria-hidden="true"></div>
+      <section class="game-frame" aria-label="Moss and Ember adventure">
+        <canvas id="game-canvas" width="960" height="540" tabindex="0" aria-label="Adventure game. Move with WASD or arrow keys, attack with J, dash with Space, cast Ember with K, and interact with E."></canvas>
+        <div class="canvas-vignette" aria-hidden="true"></div>
+
+        <div id="game-hud" class="game-hud" hidden>
+          <div class="vitals-panel">
+            <div class="vitals-heading"><span class="hero-sigil" aria-hidden="true">✧</span><span>THE WAYFARER</span></div>
+            <div id="health" class="health" aria-label="Health"></div>
+            <div class="ember-meter-row"><span aria-hidden="true">✦</span><div id="mana-meter" class="mana-meter" role="progressbar" aria-label="Ember energy" aria-valuemin="0"><div id="mana-fill"></div></div></div>
+            <div class="inventory"><span title="Acorns collected"><span class="coin-icon" aria-hidden="true">◆</span> <b id="coins">0</b></span><button id="potion-button" class="potion-button" title="Drink a healing tonic (Q)" aria-label="Drink a healing tonic"><span aria-hidden="true">♜</span> <b id="potions">0</b><kbd>Q</kbd></button></div>
+          </div>
+          <div class="area-label"><span class="area-flourish" aria-hidden="true">— ✧ —</span><span id="area-name">The Whispering Wood</span></div>
+          <aside class="quest-panel"><div class="eyebrow"><span aria-hidden="true">◇</span> YOUR JOURNEY</div><p id="quest-text">Find the keeper of the forest.</p><div class="shrine-progress"><span id="west-shrine" title="Western shrine"><i></i> WEST</span><span id="east-shrine" title="Eastern shrine"><i></i> EAST</span></div></aside>
+          <div id="interact-prompt" class="interact-prompt" hidden><kbd>E</kbd><span id="interact-label">Interact</span></div>
+          <div id="toast" class="toast" role="status" hidden></div>
+          <div id="boss-panel" class="boss-panel" hidden><div class="boss-heading"><span id="boss-name">THE HOLLOW WARDEN</span><span id="boss-health-value">42 / 42</span></div><div id="boss-health-meter" class="boss-health-meter" role="progressbar" aria-labelledby="boss-name" aria-valuemin="0" aria-valuemax="42" aria-valuenow="42"><div id="boss-health-fill"></div></div></div>
+          <div class="action-toolbar" aria-label="Game controls"><span><kbd>J</kbd><span>Sword</span></span><span><kbd>SPACE</kbd><span>Dash</span></span><span id="magic-control"><kbd>K</kbd><span>Ember</span></span><span><kbd>E</kbd><span>Interact</span></span></div>
+          <div class="utility-toolbar"><button id="map-button" class="icon-button" title="Open map (M)" aria-label="Open map"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 5 6-2 6 2 6-2v16l-6 2-6-2-6 2Zm6-2v16m6-14v16"/></svg></button><button id="sound-button" class="icon-button" title="Toggle sound" aria-label="Mute sound"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m11 5-5 4H3v6h3l5 4Zm4 3a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></svg></button><button id="pause-button" class="icon-button" title="Pause (Escape)" aria-label="Pause game"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg></button></div>
+        </div>
+
+        <section id="title-screen" class="title-screen" aria-labelledby="game-title">
+          <div class="title-content"><div class="eyebrow title-eyebrow"><span></span> A WOODLAND ADVENTURE</div><h1 id="game-title">Moss <i>&</i><br><span>Ember</span><span class="title-spark" aria-hidden="true">✧</span></h1><p class="title-description">An ancient forest. A fading light.<br>One small spark to bring it back.</p><div class="title-actions"><button id="start-button" class="primary-button">Begin your journey <span aria-hidden="true">↗</span></button><button id="continue-button" class="text-button" hidden>Continue adventure <span aria-hidden="true">→</span></button></div><div class="title-controls"><span><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> Move</span><span><kbd>J</kbd> Sword</span><span><kbd>SPACE</kbd> Dash</span></div></div>
+          <div class="title-scene-caption"><span class="caption-line"></span><span>THE FOREST REMEMBERS.</span></div>
+          <div class="title-version">EXPLORE · AWAKEN · RESTORE</div>
+        </section>
+
+        <div id="dialog-overlay" class="dialog-overlay" hidden><div class="dialog-portrait" aria-hidden="true">✦</div><div class="dialog-copy"><span id="dialog-speaker" class="eyebrow">THE KEEPER</span><p id="dialog-text"></p></div><button id="dialog-next" class="dialog-next" aria-label="Continue dialogue"><kbd>E</kbd> Continue <span aria-hidden="true">→</span></button></div>
+
+        <section id="pause-screen" class="modal-screen" role="dialog" aria-modal="true" aria-labelledby="pause-title" hidden><div class="modal-card pause-card"><div class="eyebrow">A MOMENT BY THE FIRE</div><h2 id="pause-title">Take a breath.</h2><p>The forest will be here when you return.</p><div class="controls-grid"><span><kbd>WASD</kbd> / <kbd>↑↓←→</kbd></span><span>Move</span><span><kbd>J</kbd> / <kbd>Z</kbd></span><span>Sword</span><span><kbd>SPACE</kbd></span><span>Dash</span><span><kbd>K</kbd> / <kbd>X</kbd></span><span>Cast Ember</span><span><kbd>E</kbd> / <kbd>ENTER</kbd></span><span>Interact</span><span><kbd>Q</kbd></span><span>Healing tonic</span><span><kbd>M</kbd></span><span>Area map</span></div><button id="resume-button" class="primary-button">Return to the woods <span aria-hidden="true">→</span></button><p class="save-note">Your journey is saved automatically.</p></div></section>
+
+        <section id="map-screen" class="modal-screen" role="dialog" aria-modal="true" aria-labelledby="map-title" hidden><div class="modal-card map-card"><div class="map-heading"><div><div class="eyebrow">A WAYFARER’S ATLAS</div><h2 id="map-title">The Whispering Wood</h2></div><button id="close-map" class="icon-button close-button" title="Close map (M or Escape)" aria-label="Close map">×</button></div><canvas id="map-canvas" width="640" height="360" aria-label="Map of the current area"></canvas><div class="map-legend"><span><i class="map-marker player-marker"></i>You</span><span><i class="map-marker shrine-marker"></i>Shrine</span><span><i class="map-marker door-marker"></i>Passage</span><span><i class="map-marker npc-marker"></i>Keeper</span></div><p class="map-note">Follow the old paths. Listen for the light.</p></div></section>
+
+        <section id="death-screen" class="modal-screen" role="dialog" aria-modal="true" aria-labelledby="death-title" hidden><div class="modal-card"><div class="modal-emblem" aria-hidden="true">✧</div><div class="eyebrow">EVEN EMBERS REST</div><h2 id="death-title">A spark remains.</h2><p>Gather your courage, wayfarer.<br>The forest still needs your light.</p><button id="respawn-button" class="primary-button">Rise again <span aria-hidden="true">→</span></button></div></section>
+
+        <section id="victory-screen" class="modal-screen victory-screen" role="dialog" aria-modal="true" aria-labelledby="victory-title" hidden><div class="modal-card"><div class="modal-emblem" aria-hidden="true">✦</div><div class="eyebrow">THE FOREST REMEMBERS YOU</div><h2 id="victory-title">The light returns.</h2><p>Where shadows gathered, new life stirs.<br>A small spark was all the forest needed.</p><div class="victory-stats"><div><b id="victory-time">0:00</b><span>JOURNEY TIME</span></div><div><b id="victory-kills">0</b><span>FOES DEFEATED</span></div><div><b id="victory-coins">0</b><span>ACORNS</span></div></div><button id="restart-button" class="primary-button">A new beginning <span aria-hidden="true">↗</span></button><p class="save-note">Thank you for wandering.</p></div></section>
+
+        <div id="touch-controls" class="touch-controls" hidden aria-label="Touch game controls"><div class="touch-dpad"><button data-touch="up" class="touch-up" aria-label="Move up">↑</button><button data-touch="left" class="touch-left" aria-label="Move left">←</button><span class="touch-center" aria-hidden="true">✧</span><button data-touch="right" class="touch-right" aria-label="Move right">→</button><button data-touch="down" class="touch-down" aria-label="Move down">↓</button></div><div class="touch-actions"><button data-touch="interact" aria-label="Interact">E</button><button data-touch="magic" aria-label="Cast Ember">✦</button><button data-touch="dash" aria-label="Dash">↗</button><button data-touch="attack" class="touch-attack" aria-label="Sword attack">⚔</button></div></div>
+      </section>
+    </main>
+    <footer class="site-footer"><span><span class="footer-spark" aria-hidden="true">✧</span> A LITTLE COURAGE GOES A LONG WAY.</span><span class="footer-controls">HEADPHONES RECOMMENDED <span>·</span> MADE FOR WANDERING</span></footer>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
