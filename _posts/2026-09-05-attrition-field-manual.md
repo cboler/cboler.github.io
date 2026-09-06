@@ -170,6 +170,29 @@ For example, **+3, +2, −10 = −5**. You won two Wars, but the Total War Campa
 
 These five commanders have distinct reinforcement habits as well as portraits, expressions, crests, and dialogue. Their decisions use legitimate game information; the face-down Battle selection remains blind.
 
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(125px, 1fr)); gap: 1rem; margin: 1.5rem 0 2rem;">
+  <figure style="margin: 0; text-align: center;">
+    <img src="{{ '/war-of-attrition-game/assets/commanders/quartermaster/calm.jpg' | relative_url }}" alt="Portrait of Marcel de Brie, a mustachioed French commander wearing a dark beret and decorated coat" loading="lazy" style="display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border: 2px solid #d5b46b; border-radius: .35rem;">
+    <figcaption style="margin-top: .45rem;"><strong>Marcel de Brie</strong></figcaption>
+  </figure>
+  <figure style="margin: 0; text-align: center;">
+    <img src="{{ '/war-of-attrition-game/assets/commanders/analyst/calm.jpg' | relative_url }}" alt="Portrait of Matthias von Greyerz, a stern Swiss commander carrying a rolled document" loading="lazy" style="display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border: 2px solid #d5b46b; border-radius: .35rem;">
+    <figcaption style="margin-top: .45rem;"><strong>Matthias von Greyerz</strong></figcaption>
+  </figure>
+  <figure style="margin: 0; text-align: center;">
+    <img src="{{ '/war-of-attrition-game/assets/commanders/attritionist/calm.jpg' | relative_url }}" alt="Portrait of Bastien de Herve, an elderly bearded tyromancer in a dark hood" loading="lazy" style="display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border: 2px solid #d5b46b; border-radius: .35rem;">
+    <figcaption style="margin-top: .45rem;"><strong>Bastien de Herve</strong></figcaption>
+  </figure>
+  <figure style="margin: 0; text-align: center;">
+    <img src="{{ '/war-of-attrition-game/assets/commanders/gambler/calm.jpg' | relative_url }}" alt="Portrait of Sir Edmund Gloucester, a smiling English commander holding a fan of playing cards" loading="lazy" style="display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border: 2px solid #d5b46b; border-radius: .35rem;">
+    <figcaption style="margin-top: .45rem;"><strong>Sir Edmund Gloucester</strong></figcaption>
+  </figure>
+  <figure style="margin: 0; text-align: center;">
+    <img src="{{ '/war-of-attrition-game/assets/commanders/cornered-general/calm.jpg' | relative_url }}" alt="Portrait of Lorenzo di Taleggio, an Italian merchant-prince in an ornate doublet" loading="lazy" style="display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border: 2px solid #d5b46b; border-radius: .35rem;">
+    <figcaption style="margin-top: .45rem;"><strong>Lorenzo di Taleggio</strong></figcaption>
+  </figure>
+</div>
+
 | Commander | Field identification | Expect this |
 | --- | --- | --- |
 | **Marcel de Brie** | French Master Affineur · The Quartermaster | Careful reserve planning. He values strong cards and wants favorable odds before spending another. |
