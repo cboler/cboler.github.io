@@ -2,7 +2,7 @@
 
 ### Hi there 👋
 
-I'm Chris. I'm a dad with a dog and cat, and I've got an amazing wife who's also my best friend.
+I'm Chris. I'm a dad with a dog and two cats, and I've got an amazing wife who's also my best friend.
 
 I'm interested in many subjects, particularly philosophy and science, and I enjoy solving problems.
 
