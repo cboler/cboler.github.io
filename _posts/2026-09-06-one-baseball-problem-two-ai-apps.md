@@ -235,6 +235,12 @@ Forget marketing claims, benchmarks, and Twitter hype. Based on what you see abo
 #reveal-gate.is-locked ~ * {
   display: none !important;
 }
+body.story-unlocked #reveal-gate ~ * {
+  display: block !important;
+}
+body.story-unlocked #reveal-gate.is-locked ~ * {
+  display: block !important;
+}
 @keyframes storyReveal {
   from { opacity: 0; transform: translateY(12px); }
   to { opacity: 1; transform: translateY(0); }
@@ -273,6 +279,8 @@ Forget marketing claims, benchmarks, and Twitter hype. Based on what you see abo
   </noscript>
 </div>
 
+<div id="reveal-gate" class="is-locked"></div>
+
 <script>
 (function() {
   const container = document.getElementById('blind-poll-container');
@@ -281,30 +289,45 @@ Forget marketing claims, benchmarks, and Twitter hype. Based on what you see abo
   const radios = document.getElementsByName('model-mapping-guess');
   const verdict = document.getElementById('guess-verdict');
   const pollForm = document.getElementById('poll-form');
-  const revealGate = document.getElementById('reveal-gate');
 
   if (!btnLock || !verdict) return;
 
   function unlockStory() {
-    if (revealGate) {
-      revealGate.classList.remove('is-locked');
-      revealGate.classList.add('story-revealed');
+    const gate = document.getElementById('reveal-gate');
+    if (gate) {
+      gate.classList.remove('is-locked');
+      gate.classList.add('story-revealed');
     }
+    document.querySelectorAll('#reveal-gate, .is-locked').forEach(function(el) {
+      el.classList.remove('is-locked');
+      el.classList.add('story-revealed');
+    });
+    document.body.classList.add('story-unlocked');
     try {
       sessionStorage.setItem('baseball_blind_revealed', 'true');
     } catch (e) {}
   }
 
-  try {
-    if (sessionStorage.getItem('baseball_blind_revealed') === 'true') {
-      unlockStory();
-      btnLock.style.display = 'none';
-      btnSkip.style.display = 'none';
-      radios.forEach(function(r) { r.disabled = true; });
-      verdict.innerHTML = '<strong>The Curtain is Lifted:</strong> <strong>App A is Gemini 3.8 Flash High</strong> (<a href="https://github.com/cboler/baseball-practice-helper" target="_blank" rel="noopener noreferrer">Baseball Practice Helper</a>), and <strong>App B is GPT-6 Astra Ultra</strong> (<a href="https://github.com/cboler/baseball-coach-helper" target="_blank" rel="noopener noreferrer">Baseball Coach Helper</a>).<div style="margin-top: 1rem;"><a href="#the-rest-of-the-story" style="color: #2aa198; font-weight: bold; text-decoration: underline;">Jump to The Rest of the Story &darr;</a></div>';
-      verdict.style.display = 'block';
-    }
-  } catch (e) {}
+  function checkSession() {
+    try {
+      if (sessionStorage.getItem('baseball_blind_revealed') === 'true') {
+        unlockStory();
+        if (btnLock) btnLock.style.display = 'none';
+        if (btnSkip) btnSkip.style.display = 'none';
+        radios.forEach(function(r) { r.disabled = true; });
+        if (verdict) {
+          verdict.innerHTML = '<strong>The Curtain is Lifted:</strong> <strong>App A is Gemini 3.8 Flash High</strong> (<a href="https://github.com/cboler/baseball-practice-helper" target="_blank" rel="noopener noreferrer">Baseball Practice Helper</a>), and <strong>App B is GPT-6 Astra Ultra</strong> (<a href="https://github.com/cboler/baseball-coach-helper" target="_blank" rel="noopener noreferrer">Baseball Coach Helper</a>).<div style="margin-top: 1rem;"><a href="#the-rest-of-the-story" style="color: #2aa198; font-weight: bold; text-decoration: underline;">Jump to The Rest of the Story &darr;</a></div>';
+          verdict.style.display = 'block';
+        }
+      }
+    } catch (e) {}
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', checkSession);
+  } else {
+    checkSession();
+  }
 
   radios.forEach(function(r) {
     r.addEventListener('change', function() {
@@ -338,7 +361,9 @@ Forget marketing claims, benchmarks, and Twitter hype. Based on what you see abo
 
     const storySection = document.getElementById('the-rest-of-the-story');
     if (storySection) {
-      storySection.scrollIntoView({ behavior: 'smooth' });
+      setTimeout(function() {
+        storySection.scrollIntoView({ behavior: 'smooth' });
+      }, 50);
     }
   }
 
@@ -349,7 +374,6 @@ Forget marketing claims, benchmarks, and Twitter hype. Based on what you see abo
 
 ---
 
-<div id="reveal-gate" class="is-locked"></div>
 <div id="the-rest-of-the-story"></div>
 
 ## The Rest of the Story
