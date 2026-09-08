@@ -436,3 +436,17 @@ Shortly after publishing this article, a helpful discussion surfaced on r/codex:
 In fairness to the model and Codex: during the experiment, these guidelines weren't quite out yet—or at least, I hadn't found them. Astra is a specialized computer-operator model designed for autonomous execution and tool loops, and its steering conventions are quite different from traditional conversational or code-completion models. Operating it without those guidelines likely contributed to its heavy quota consumption and deep rabbit holes during the run.
 
 Knowing those patterns now might have changed how Astra was steered through its quota budget. In the spirit of sportsmanlike evaluation and honest engineering records, it is an important nuance to keep in mind.
+
+---
+
+## Update (September 8, 2026): The Coach's Verdict
+
+There is one more update to this story—and it turns out to be the ultimate decider.
+
+While my own technical breakdown gave the nod to Gemini's App A for its analytical depth and situational splits, the real-world customer has officially weighed in. Hunter Mize—the coach whose batting-practice frustration kicked off this entire saga years ago—tested both applications.
+
+His verdict? **App B (Astra's [Baseball Coach Helper](https://github.com/cboler/baseball-coach-helper)) in fact won.**
+
+Hunter decided that Astra's app is the one he prefers, and it's the one he is taking onto the field and using for practice.
+
+At the end of the day, developer benchmarks, architectural elegance, and feature matrices only take you so far. The only opinion that truly matters is the coach holding the phone by the cage.
