@@ -39,12 +39,6 @@ Before we get into the behind-the-scenes engineering, the usage-quota drama, the
 
 **We are going to let you judge the software blind.**
 
-<div class="update-banner" style="border: 1px solid rgba(42, 161, 152, 0.4); border-radius: 8px; background: rgba(0, 43, 54, 0.6); padding: 1.25rem 1.5rem; margin: 2rem 0;">
-  <h3 style="margin-top: 0; color: #2aa198; font-size: 1.15rem;">⚾ Update (September 7, 2026): Cast Your Vote &amp; A Note on Astra's Prompting</h3>
-  <p><strong>1. Vote with a Star:</strong> Once you've tried both applications in the blind test below, cast your vote for your favorite version of the app by leaving a ⭐ star on the repository that you prefer! (The full repositories and model identities unlock as soon as you make your pick below.)</p>
-  <p style="margin-bottom: 0;"><strong>2. Context on Astra's Guidelines:</strong> After publishing, a notable discussion surfaced on r/codex: <a href="https://www.reddit.com/r/codex/comments/1w7x57n/before_blaming_gpt6_astra_read_its_prompting_guide/" target="_blank" rel="noopener noreferrer"><em>Before blaming GPT-6 Astra, read its prompting guide</em></a>. In fairness to the model and Codex: during this experiment, these guidelines weren't quite out yet—or at least, I hadn't found them. Astra is a specialized computer-operator model with distinct steering conventions, and operating it without those guidelines likely contributed to its heavy quota consumption and deep rabbit holes. Keep that in mind as you read the play-by-play once unlocked!</p>
-</div>
-
 ---
 
 ## Part One: The Blind Test
@@ -416,7 +410,7 @@ That thoroughness had a steep cost. At 2:22 PM, right in the middle of implement
 
 Like the [Moss & Ember run yesterday]({{ '/games/technology/2026/09/05/moss-and-ember.html' | relative_url }}), the quota meter had treated the job like an all-out sprint and exhausted its entire 5-hour allowance.
 
-*(An important caveat here: as noted in the update above, official best practices and community guidelines for prompting Astra were not yet published or discovered when this run took place—see the [r/codex discussion](https://www.reddit.com/r/codex/comments/1w7x57n/before_blaming_gpt6_astra_read_its_prompting_guide/) for context on its operational and steering requirements.)*
+*(An important caveat here: as detailed in the update at the bottom of this article, official best practices and community guidelines for prompting Astra were not yet published or discovered when this run took place—see the [r/codex discussion](https://www.reddit.com/r/codex/comments/1w7x57n/before_blaming_gpt6_astra_read_its_prompting_guide/) for context on its operational and steering requirements.)*
 
 Hours later, the window refreshed and Astra resumed:
 
@@ -633,3 +627,21 @@ In the spirit of honest technical documentation, here is how this article was pr
 - **Gemini 3.8 Flash (High):** Authored the final Jekyll article, implemented the interactive blind reveal component, organized the screenshot evidence, and verified the site build.
 
 If you have an old product specification sitting in a text file somewhere, maybe it's time to dust it off.
+
+---
+
+## Update (September 7, 2026): Community Star Vote & Astra's Prompting Playbook
+
+Since publishing this article yesterday, two notable things have developed:
+
+### 1. Vote for Your Favorite App
+Coaches and developers have been putting both applications through their paces. Now that you've seen what both agents built, **cast your vote for your favorite version by leaving a ⭐ star on the repository of your choice:**
+- ⭐ **[Baseball Practice Helper](https://github.com/cboler/baseball-practice-helper)** (Gemini 3.8 Flash High)
+- ⭐ **[Baseball Coach Helper](https://github.com/cboler/baseball-coach-helper)** (GPT-6 Astra Ultra)
+
+### 2. Context on Astra's Prompting Guidelines
+Shortly after publishing, a helpful discussion surfaced on r/codex: [**Before blaming GPT-6 Astra, read its prompting guide**](https://www.reddit.com/r/codex/comments/1w7x57n/before_blaming_gpt6_astra_read_its_prompting_guide/).
+
+In fairness to the model and Codex: during the experiment, these guidelines weren't quite out yet—or at least, I hadn't found them. Astra is a specialized computer-operator model designed for autonomous execution and tool loops, and its steering conventions are quite different from traditional conversational or code-completion models. Operating it without those guidelines likely contributed to its heavy quota consumption and deep rabbit holes during the run.
+
+Knowing those patterns now might have changed how Astra was steered through its quota budget. In the spirit of sportsmanlike evaluation and honest engineering records, it is an important nuance to keep in mind.
