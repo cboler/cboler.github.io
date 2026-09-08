@@ -140,148 +140,12 @@ Forget marketing claims, benchmarks, and Twitter hype. Based on what you see abo
 
 **Which agent built which application?**
 
-<style>
-.blind-reveal-card {
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 10px;
-  background: rgba(0, 43, 54, 0.45);
-  padding: 1.75rem;
-  margin: 2.5rem 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-}
-.guess-title {
-  margin-top: 0;
-  font-size: 1.25rem;
-  color: #268bd2;
-}
-.guess-options {
-  display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
-  margin: 1.25rem 0;
-}
-.guess-label {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.85rem 1.1rem;
-  border-radius: 6px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  cursor: pointer;
-  transition: background 0.15s ease, border-color 0.15s ease;
-}
-.guess-label:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: #2aa198;
-}
-.guess-label input[type="radio"] {
-  width: 1.15rem;
-  height: 1.15rem;
-  accent-color: #2aa198;
-  cursor: pointer;
-}
-.guess-button-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 1.25rem;
-}
-.btn-lock {
-  background: #2aa198;
-  color: #fff;
-  border: none;
-  padding: 0.65rem 1.4rem;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: opacity 0.15s ease, transform 0.1s ease;
-}
-.btn-lock:disabled {
-  opacity: 0.4;
-  cursor: not-allowed;
-}
-.btn-lock:not(:disabled):hover {
-  opacity: 0.9;
-  transform: translateY(-1px);
-}
-.btn-skip {
-  background: transparent;
-  color: #93a1a1;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 0.65rem 1.2rem;
-  font-size: 0.95rem;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: color 0.15s ease, border-color 0.15s ease;
-}
-.btn-skip:hover {
-  color: #eee8d5;
-  border-color: rgba(255, 255, 255, 0.4);
-}
-.guess-verdict {
-  margin-top: 1.5rem;
-  padding: 1.25rem;
-  border-radius: 6px;
-  background: rgba(255, 255, 255, 0.06);
-  border-left: 4px solid #2aa198;
-  animation: fadeIn 0.3s ease-in-out;
-}
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(6px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-#reveal-gate.is-locked ~ * {
-  display: none !important;
-}
-body.story-unlocked #reveal-gate ~ * {
-  display: block !important;
-}
-body.story-unlocked #reveal-gate.is-locked ~ * {
-  display: block !important;
-}
-@keyframes storyReveal {
-  from { opacity: 0; transform: translateY(12px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-.story-revealed ~ * {
-  animation: storyReveal 0.4s ease-out;
-}
-</style>
+- **Option 1:** App A was built by Gemini 3.8 Flash High; App B was built by GPT-6 Astra Ultra.
+- **Option 2:** App A was built by GPT-6 Astra Ultra; App B was built by Gemini 3.8 Flash High.
 
-<div class="blind-reveal-card" id="blind-poll-container">
-  <h3 class="guess-title">Make your call:</h3>
-  <div class="guess-options" id="poll-form">
-    <label class="guess-label">
-      <input type="radio" name="model-mapping-guess" value="gemini-astra" id="choice-ga">
-      <span><strong>Option 1:</strong> App A was built by Gemini 3.8 Flash High; App B was built by GPT-6 Astra Ultra.</span>
-    </label>
-    <label class="guess-label">
-      <input type="radio" name="model-mapping-guess" value="astra-gemini" id="choice-ag">
-      <span><strong>Option 2:</strong> App A was built by GPT-6 Astra Ultra; App B was built by Gemini 3.8 Flash High.</span>
-    </label>
-  </div>
-  <div class="guess-button-group">
-    <button type="button" class="btn-lock" id="btn-lock-guess" disabled>Lock in your guess</button>
-    <button type="button" class="btn-skip" id="btn-skip-guess">Reveal without guessing</button>
-  </div>
-  <div id="guess-verdict" class="guess-verdict" style="display: none;"></div>
-  <noscript>
-    <style>
-      #reveal-gate.is-locked ~ * {
-        display: block !important;
-      }
-    </style>
-    <div style="margin-top: 1.25rem; padding: 1rem; background: rgba(255,255,255,0.05); border-left: 4px solid #b58900;">
-      <p style="margin: 0;"><strong>JavaScript is disabled.</strong> The reveal: <strong>App A is Gemini 3.8 Flash High</strong> (Baseball Practice Helper) and <strong>App B is GPT-6 Astra Ultra</strong> (Baseball Coach Helper). Read on below for the complete story!</p>
-    </div>
-  </noscript>
-</div>
+Take a second and decide which one you think is which. Mentally lock in your call.
 
-<div id="reveal-gate" class="is-locked"></div>
-
-<script src="{{ '/assets/js/baseball-poll.js' | relative_url }}"></script>
+Once you have your pick, read on below to see who actually built what—and what happened behind the scenes.
 
 ---
 
@@ -565,17 +429,9 @@ If you have an old product specification sitting in a text file somewhere, maybe
 
 ---
 
-## Update (September 7, 2026): Community Star Vote & Astra's Prompting Playbook
+## Update (September 7, 2026): A Note on Astra's Prompting Guidelines
 
-Since publishing this article yesterday, two notable things have developed:
-
-### 1. Vote for Your Favorite App
-Coaches and developers have been putting both applications through their paces. Now that you've seen what both agents built, **cast your vote for your favorite version by leaving a ⭐ star on the repository of your choice:**
-- ⭐ **[Baseball Practice Helper](https://github.com/cboler/baseball-practice-helper)** (Gemini 3.8 Flash High)
-- ⭐ **[Baseball Coach Helper](https://github.com/cboler/baseball-coach-helper)** (GPT-6 Astra Ultra)
-
-### 2. Context on Astra's Prompting Guidelines
-Shortly after publishing, a helpful discussion surfaced on r/codex: [**Before blaming GPT-6 Astra, read its prompting guide**](https://www.reddit.com/r/codex/comments/1w7x57n/before_blaming_gpt6_astra_read_its_prompting_guide/).
+Shortly after publishing this article, a helpful discussion surfaced on r/codex: [**Before blaming GPT-6 Astra, read its prompting guide**](https://www.reddit.com/r/codex/comments/1w7x57n/before_blaming_gpt6_astra_read_its_prompting_guide/).
 
 In fairness to the model and Codex: during the experiment, these guidelines weren't quite out yet—or at least, I hadn't found them. Astra is a specialized computer-operator model designed for autonomous execution and tool loops, and its steering conventions are quite different from traditional conversational or code-completion models. Operating it without those guidelines likely contributed to its heavy quota consumption and deep rabbit holes during the run.
 
