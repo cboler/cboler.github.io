@@ -41,13 +41,8 @@ Before we get into the behind-the-scenes engineering, the usage-quota drama, the
 
 <div class="update-banner" style="border: 1px solid rgba(42, 161, 152, 0.4); border-radius: 8px; background: rgba(0, 43, 54, 0.6); padding: 1.25rem 1.5rem; margin: 2rem 0;">
   <h3 style="margin-top: 0; color: #2aa198; font-size: 1.15rem;">⚾ Update (September 7, 2026): Cast Your Vote &amp; A Note on Astra's Prompting</h3>
-  <p><strong>1. Vote with a Star:</strong> Which version of the app do you prefer? Cast your vote by leaving a ⭐ star on your favorite repository:</p>
-  <ul>
-    <li>⭐ <a href="https://github.com/cboler/baseball-practice-helper" target="_blank" rel="noopener noreferrer"><strong>Baseball Practice Helper</strong></a> (Gemini 3.8 Flash High)</li>
-    <li>⭐ <a href="https://github.com/cboler/baseball-coach-helper" target="_blank" rel="noopener noreferrer"><strong>Baseball Coach Helper</strong></a> (GPT-6 Astra Ultra)</li>
-  </ul>
-  <p><em>(Want to test them without bias first? Scroll right down to Part One for the blind comparison!)</em></p>
-  <p style="margin-bottom: 0;"><strong>2. Context on Astra's Guidelines:</strong> After publishing, a notable discussion surfaced on r/codex: <a href="https://www.reddit.com/r/codex/comments/1w7x57n/before_blaming_gpt6_astra_read_its_prompting_guide/" target="_blank" rel="noopener noreferrer"><em>Before blaming GPT-6 Astra, read its prompting guide</em></a>. In fairness to the model and Codex: during this experiment, these guidelines weren't quite out yet—or at least, I hadn't found them. Astra is a specialized computer-operator model with distinct steering conventions, and operating it without those guidelines likely contributed to its heavy quota consumption and deep rabbit holes. Keep that in mind as you read the play-by-play below!</p>
+  <p><strong>1. Vote with a Star:</strong> Once you've tried both applications in the blind test below, cast your vote for your favorite version of the app by leaving a ⭐ star on the repository that you prefer! (The full repositories and model identities unlock as soon as you make your pick below.)</p>
+  <p style="margin-bottom: 0;"><strong>2. Context on Astra's Guidelines:</strong> After publishing, a notable discussion surfaced on r/codex: <a href="https://www.reddit.com/r/codex/comments/1w7x57n/before_blaming_gpt6_astra_read_its_prompting_guide/" target="_blank" rel="noopener noreferrer"><em>Before blaming GPT-6 Astra, read its prompting guide</em></a>. In fairness to the model and Codex: during this experiment, these guidelines weren't quite out yet—or at least, I hadn't found them. Astra is a specialized computer-operator model with distinct steering conventions, and operating it without those guidelines likely contributed to its heavy quota consumption and deep rabbit holes. Keep that in mind as you read the play-by-play once unlocked!</p>
 </div>
 
 ---
@@ -243,6 +238,16 @@ Forget marketing claims, benchmarks, and Twitter hype. Based on what you see abo
   from { opacity: 0; transform: translateY(6px); }
   to { opacity: 1; transform: translateY(0); }
 }
+#reveal-gate.is-locked ~ * {
+  display: none !important;
+}
+@keyframes storyReveal {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.story-revealed ~ * {
+  animation: storyReveal 0.4s ease-out;
+}
 </style>
 
 <div class="blind-reveal-card" id="blind-poll-container">
@@ -263,6 +268,11 @@ Forget marketing claims, benchmarks, and Twitter hype. Based on what you see abo
   </div>
   <div id="guess-verdict" class="guess-verdict" style="display: none;"></div>
   <noscript>
+    <style>
+      #reveal-gate.is-locked ~ * {
+        display: block !important;
+      }
+    </style>
     <div style="margin-top: 1.25rem; padding: 1rem; background: rgba(255,255,255,0.05); border-left: 4px solid #b58900;">
       <p style="margin: 0;"><strong>JavaScript is disabled.</strong> The reveal: <strong>App A is Gemini 3.8 Flash High</strong> (Baseball Practice Helper) and <strong>App B is GPT-6 Astra Ultra</strong> (Baseball Coach Helper). Read on below for the complete story!</p>
     </div>
@@ -277,8 +287,30 @@ Forget marketing claims, benchmarks, and Twitter hype. Based on what you see abo
   const radios = document.getElementsByName('model-mapping-guess');
   const verdict = document.getElementById('guess-verdict');
   const pollForm = document.getElementById('poll-form');
+  const revealGate = document.getElementById('reveal-gate');
 
   if (!btnLock || !verdict) return;
+
+  function unlockStory() {
+    if (revealGate) {
+      revealGate.classList.remove('is-locked');
+      revealGate.classList.add('story-revealed');
+    }
+    try {
+      sessionStorage.setItem('baseball_blind_revealed', 'true');
+    } catch (e) {}
+  }
+
+  try {
+    if (sessionStorage.getItem('baseball_blind_revealed') === 'true') {
+      unlockStory();
+      btnLock.style.display = 'none';
+      btnSkip.style.display = 'none';
+      radios.forEach(function(r) { r.disabled = true; });
+      verdict.innerHTML = '<strong>The Curtain is Lifted:</strong> <strong>App A is Gemini 3.8 Flash High</strong> (<a href="https://github.com/cboler/baseball-practice-helper" target="_blank" rel="noopener noreferrer">Baseball Practice Helper</a>), and <strong>App B is GPT-6 Astra Ultra</strong> (<a href="https://github.com/cboler/baseball-coach-helper" target="_blank" rel="noopener noreferrer">Baseball Coach Helper</a>).<div style="margin-top: 1rem;"><a href="#the-rest-of-the-story" style="color: #2aa198; font-weight: bold; text-decoration: underline;">Jump to The Rest of the Story &darr;</a></div>';
+      verdict.style.display = 'block';
+    }
+  } catch (e) {}
 
   radios.forEach(function(r) {
     r.addEventListener('change', function() {
@@ -308,6 +340,8 @@ Forget marketing claims, benchmarks, and Twitter hype. Based on what you see abo
     btnSkip.style.display = 'none';
     radios.forEach(function(r) { r.disabled = true; });
 
+    unlockStory();
+
     const storySection = document.getElementById('the-rest-of-the-story');
     if (storySection) {
       storySection.scrollIntoView({ behavior: 'smooth' });
@@ -321,6 +355,7 @@ Forget marketing claims, benchmarks, and Twitter hype. Based on what you see abo
 
 ---
 
+<div id="reveal-gate" class="is-locked"></div>
 <div id="the-rest-of-the-story"></div>
 
 ## The Rest of the Story
