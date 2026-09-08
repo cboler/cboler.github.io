@@ -15,6 +15,8 @@ Attrition has accumulated enough new things that it deserves one of those bookle
 
 So this update is **Attrition's game manual**. Imagine a small stapled booklet, a slightly creased cover, and a cartridge waiting beside the television.
 
+> **FIELD REVISION · SEPTEMBER 8, 2026:** Rule 4 now uses **Challenge** consistently for the mechanic and **reinforcement** for the card committed during it. The achievement count has also been updated after probability calibration. The original publication and the revision are documented in the [Developing Attrition series]({{ '/attrition-development/' | relative_url }}).
+
 <div style="margin: 2rem 0; padding: 2rem 1.25rem; border: 3px double #d5b46b; background: #102c24; color: #f5ead0; text-align: center;">
   <p style="letter-spacing: .18em; font-size: .8rem;">OFFICIAL FIELD ISSUE · SEPTEMBER 2026</p>
   <p style="font-family: Georgia, serif; font-size: clamp(2rem, 8vw, 3.5rem); letter-spacing: .08em; line-height: 1.2; margin: 1rem 0; color: #efd18c;"><strong>ATTRITION</strong></p>
@@ -115,7 +117,7 @@ If they tie, everyone already committed stays at stake, and each side must suppl
 
 ![Equal Sevens have triggered a Battle. Each side has committed three face-down cards, and the opponent's targets are labeled left, center, and right.]({{ '/docs/attrition-manual/battle.png' | relative_url }})
 
-**4. Tactical Reinforcements.** After losing an ordinary comparison, you may commit one extra card through **Challenge**. Its rank is compared against the opponent's original winning card. You do **not** add the two friendly ranks together, and the original defeated card remains at stake.
+**4. Challenges.** After losing an ordinary comparison, you may **Challenge** the result by committing one reinforcement. The reinforcement's rank is compared against the opponent's original winning card. You do **not** add the two friendly ranks together, and the original defeated card remains at stake.
 
 | Reinforcement result | What happens |
 | --- | --- |
@@ -153,7 +155,7 @@ A **War** is one game. A **Campaign** is a three-War series. The story spans fou
 
 | Chapter | Orders | What you must manage |
 | --- | --- | --- |
-| **I — The Accord** | Classic rules | Reinforce whenever the rules allow and your deck can supply a card. |
+| **I — The Accord** | Classic rules | Challenge whenever the rules allow and your deck can supply a reinforcement. |
 | **II — The Closing Passes** | Limited Reserves | You have **five reinforcement uses across all three Wars**. They do not refill between Wars. |
 | **III — The Blind Wheel** | Limited Reserves + Fog of War | Keep that same five-use budget while casualty inspection and identifying historical combat details are sealed during each War. |
 | **IV — The War of Attrition** | Limited Reserves + Fog of War + Total War | All previous constraints remain, and the signed card margins across the three Wars determine the campaign result. |
@@ -168,7 +170,7 @@ For example, **+3, +2, −10 = −5**. You won two Wars, but the Total War Campa
 
 ## Know your opposition
 
-These five commanders have distinct reinforcement habits as well as portraits, expressions, crests, and dialogue. Their decisions use legitimate game information; the face-down Battle selection remains blind.
+These five commanders have distinct Challenge policies as well as portraits, expressions, crests, and dialogue. Their decisions use legitimate game information; the face-down Battle selection remains blind.
 
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(125px, 1fr)); gap: 1rem; margin: 1.5rem 0 2rem;">
   <figure style="margin: 0; text-align: center;">
@@ -205,7 +207,7 @@ Their dialogue responds to rescues, setbacks, narrow victories, and the progress
 
 ## Between engagements
 
-Your profile brings together career statistics, achievements, and campaign history. The game now has **thirty local tiered achievements**, alongside the individual card histories in the Hall of Valor. Recent fixes also tightened statistics and settlement accounting, including awkward endings where a Battle exhausts an army.
+Your profile brings together career statistics, achievements, and campaign history. The game now has **thirty-two visible achievements** divided into Milestones, Distinctions, and Prestige, alongside the individual card histories in the Hall of Valor. Five additional Anomalies remain hidden unless they are actually observed. Recent fixes also tightened statistics and settlement accounting, including awkward endings where a Battle exhausts an army.
 
 Victorious Campaigns award tokens: one for the victory, with another for a positive cumulative card differential. Cosmetic unlocks and card backings give you something to spend that success on. A different backing changes the appearance of your cards without changing their strength.
 
