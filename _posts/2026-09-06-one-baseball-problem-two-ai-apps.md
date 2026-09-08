@@ -39,6 +39,17 @@ Before we get into the behind-the-scenes engineering, the usage-quota drama, the
 
 **We are going to let you judge the software blind.**
 
+<div class="update-banner" style="border: 1px solid rgba(42, 161, 152, 0.4); border-radius: 8px; background: rgba(0, 43, 54, 0.6); padding: 1.25rem 1.5rem; margin: 2rem 0;">
+  <h3 style="margin-top: 0; color: #2aa198; font-size: 1.15rem;">⚾ Update (September 7, 2026): Cast Your Vote &amp; A Note on Astra's Prompting</h3>
+  <p><strong>1. Vote with a Star:</strong> Which version of the app do you prefer? Cast your vote by leaving a ⭐ star on your favorite repository:</p>
+  <ul>
+    <li>⭐ <a href="https://github.com/cboler/baseball-practice-helper" target="_blank" rel="noopener noreferrer"><strong>Baseball Practice Helper</strong></a> (Gemini 3.8 Flash High)</li>
+    <li>⭐ <a href="https://github.com/cboler/baseball-coach-helper" target="_blank" rel="noopener noreferrer"><strong>Baseball Coach Helper</strong></a> (GPT-6 Astra Ultra)</li>
+  </ul>
+  <p><em>(Want to test them without bias first? Scroll right down to Part One for the blind comparison!)</em></p>
+  <p style="margin-bottom: 0;"><strong>2. Context on Astra's Guidelines:</strong> After publishing, a notable discussion surfaced on r/codex: <a href="https://www.reddit.com/r/codex/comments/1w7x57n/before_blaming_gpt6_astra_read_its_prompting_guide/" target="_blank" rel="noopener noreferrer"><em>Before blaming GPT-6 Astra, read its prompting guide</em></a>. In fairness to the model and Codex: during this experiment, these guidelines weren't quite out yet—or at least, I hadn't found them. Astra is a specialized computer-operator model with distinct steering conventions, and operating it without those guidelines likely contributed to its heavy quota consumption and deep rabbit holes. Keep that in mind as you read the play-by-play below!</p>
+</div>
+
 ---
 
 ## Part One: The Blind Test
@@ -370,6 +381,8 @@ That thoroughness had a steep cost. At 2:22 PM, right in the middle of implement
 
 Like the [Moss & Ember run yesterday]({{ '/games/technology/2026/09/05/moss-and-ember.html' | relative_url }}), the quota meter had treated the job like an all-out sprint and exhausted its entire 5-hour allowance.
 
+*(An important caveat here: as noted in the update above, official best practices and community guidelines for prompting Astra were not yet published or discovered when this run took place—see the [r/codex discussion](https://www.reddit.com/r/codex/comments/1w7x57n/before_blaming_gpt6_astra_read_its_prompting_guide/) for context on its operational and steering requirements.)*
+
 Hours later, the window refreshed and Astra resumed:
 
 ![Codex resuming work on Baseball Coach Helper with 3% remaining]({{ '/assets/images/ai-baseball/astra-resumed.png' | relative_url }})
@@ -552,6 +565,10 @@ Gemini's implementation feels richer, more polished, and more closely attuned to
 A fair summary of the contest is:
 
 > **Astra built a formidable contender. Gemini built the app you’d actually keep on your home screen.**
+
+Now it’s your turn to make the call. Which implementation do you prefer? **Vote by leaving a ⭐ star on the repository of your choice:**
+- ⭐ **[Baseball Practice Helper](https://github.com/cboler/baseball-practice-helper)** (Gemini 3.8 Flash High)
+- ⭐ **[Baseball Coach Helper](https://github.com/cboler/baseball-coach-helper)** (GPT-6 Astra Ultra)
 
 ---
 
