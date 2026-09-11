@@ -29,7 +29,7 @@ That distinction matters. A clean story assembled afterward is not the same thin
 
 1. [**War of Attrition Game**]({{ '/2025/08/17/attrition.html' | relative_url }}) — August 17, 2025. The original experiment: manage a coding agent while it builds a digital version of a card game invented with friends.
 
-2. [**War of Attrition Game, on Android!**]({{ '/2026/08/17/attrition-android.html' | relative_url }}) — August 17, 2026. The return to the project, its dedication, and the point at which the game began to feel shareable.
+2. [**War of Attrition Game, on Android!**]({{ '/2026/08/17/attrition-android.html' | relative_url }}) — August 17, 2026. The return to the project and the point at which the game began to feel shareable.
 
 3. [**Attrition: The Instruction Booklet**]({{ '/attrition-manual/' | relative_url }}) — September 5, 2026. A cartridge-era field manual for the campaign, commanders, rules, Chronicle, Hall of Valor, and card table.
 

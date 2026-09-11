@@ -34,12 +34,6 @@ There’s another group I need to thank as well.
 
 Attrition exists because of those years and those friendships.
 
-And so, more importantly than any release announcement:
-
-**Attrition is dedicated to the memory of Marc Hinson.**
-
-Some projects accumulate meaning along the way that you couldn’t possibly have planned when they started. This is one of them.
-
 I hope people enjoy the game. I hope somebody gets overly invested in saving a two, gets annoyed when an opponent refuses to surrender, discovers one of the dumb historical references buried in the interface, or simply kills a few minutes playing a strange little variation on War.
 
 Mostly, I’m just glad it exists.

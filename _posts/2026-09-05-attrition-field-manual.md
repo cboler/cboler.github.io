@@ -227,7 +227,7 @@ Attrition is ad-free. Optional usage analytics start disabled and require consen
 
 That is the booklet I wanted Attrition to have: enough instruction to get you playing, enough character to make you curious, and a few notes you might return to after an especially expensive decision.
 
-The game still carries its dedication to the memory of **Marc Hinson**, and my thanks to the friends who helped invent it and everyone who has kept playing, testing, and finding the things I missed.
+My thanks to the friends who helped invent the game and everyone who has kept playing, testing, and finding the things I missed.
 
 Now put the booklet beside you. Shuffle the deck. Try to bring somebody home.
 
