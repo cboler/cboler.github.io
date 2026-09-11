@@ -17,6 +17,125 @@ So this update is **Attrition's game manual**. Imagine a small stapled booklet, 
 
 > **FIELD REVISION · SEPTEMBER 8, 2026:** Rule 4 now uses **Challenge** consistently for the mechanic and **reinforcement** for the card committed during it. The achievement count has also been updated after probability calibration. The original publication and the revision are documented in the [Developing Attrition series]({{ '/attrition-development/' | relative_url }}).
 
+> **ILLUSTRATED FIELD REVISION · SEPTEMBER 10, 2026:** The booklet now includes the opening sequence photographed on an actual phone, annotated table and menu plates, first-launch analytics guidance, and navigation back to this contents page. Several plates preserve an earlier field issue of the interface. This is both historically accurate and traditional for instruction manuals.
+
+<style>
+  .attrition-photo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: .8rem;
+    margin: 1.5rem 0 2rem;
+  }
+
+  .attrition-photo-grid.three-up {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .attrition-photo-grid figure {
+    margin: 0;
+  }
+
+  .attrition-photo-grid img,
+  .attrition-shot img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 2px solid #d5b46b;
+    border-radius: .45rem;
+    background: #08231d;
+    box-shadow: 0 .5rem 1.25rem rgba(0, 0, 0, .22);
+  }
+
+  .attrition-photo-grid figcaption {
+    margin-top: .45rem;
+    font-size: .78rem;
+    line-height: 1.35;
+    text-align: center;
+  }
+
+  .attrition-plate {
+    display: grid;
+    grid-template-columns: minmax(240px, 360px) minmax(0, 1fr);
+    gap: 1.35rem;
+    align-items: start;
+    margin: 1.5rem 0 2rem;
+    padding: 1rem;
+    border: 3px double #d5b46b;
+    background: #102c24;
+    color: #f5ead0;
+  }
+
+  .attrition-shot {
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .attrition-pin,
+  .attrition-number {
+    display: inline-grid;
+    place-items: center;
+    width: 1.9rem;
+    height: 1.9rem;
+    border: 2px solid #f7db86;
+    border-radius: 50%;
+    background: #08231d;
+    color: #f7db86;
+    font: 700 .9rem/1 Georgia, serif;
+    box-shadow: 0 0 0 3px rgba(8, 35, 29, .72);
+  }
+
+  .attrition-pin {
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+
+  .attrition-callouts {
+    display: grid;
+    gap: .85rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .attrition-callouts li {
+    display: grid;
+    grid-template-columns: 1.9rem minmax(0, 1fr);
+    gap: .7rem;
+    align-items: start;
+  }
+
+  .attrition-callouts strong {
+    color: #efd18c;
+  }
+
+  .attrition-plate-caption {
+    margin: 0 0 .9rem;
+    color: #d8d2c3;
+    font-size: .86rem;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+
+  .attrition-back-link {
+    margin: 2rem 0;
+    text-align: right;
+    font-size: .9rem;
+  }
+
+  @media (max-width: 700px) {
+    .attrition-photo-grid,
+    .attrition-photo-grid.three-up {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .attrition-plate {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
 <div style="margin: 2rem 0; padding: 2rem 1.25rem; border: 3px double #d5b46b; background: #102c24; color: #f5ead0; text-align: center;">
   <p style="letter-spacing: .18em; font-size: .8rem;">OFFICIAL FIELD ISSUE · SEPTEMBER 2026</p>
   <p style="font-family: Georgia, serif; font-size: clamp(2rem, 8vw, 3.5rem); letter-spacing: .08em; line-height: 1.2; margin: 1rem 0; color: #efd18c;"><strong>ATTRITION</strong></p>
@@ -55,7 +174,40 @@ Yes, there is a cheese war. We have committed to the premise.
 
 ## Your first turn
 
-Open the game, read the **Field Command Briefing**, and select **Issue Orders & Engage** when your orders are ready. Tutorial guidance can walk you through the table.
+On first launch, Attrition asks whether you want to share optional gameplay and app-usage analytics. Choose **Share anonymous data** or **No thanks**; either choice lets you play, the game remembers it, and you can change it later under **Settings → Data & Privacy**. Names, email addresses, Google identities, story text, and hidden cards are excluded from the gameplay records.
+
+The opening orientation then introduces the objective, the enemy command zone, your deck, the Boneyard, and the Field Manual. Follow the cards in order; **Skip Tour** remains available if you already know the table.
+
+<div class="attrition-photo-grid" aria-label="Four phone screenshots showing the original table-orientation sequence">
+  <figure>
+    <a href="{{ '/docs/attrition-manual/phone/orientation-1-welcome.png' | relative_url }}">
+      <img src="{{ '/docs/attrition-manual/phone/orientation-1-welcome.png' | relative_url }}" alt="Phone screenshot of the Welcome Commander orientation card explaining the objective of exhausting the enemy army" loading="lazy">
+    </a>
+    <figcaption><strong>1.</strong> Receive the objective.</figcaption>
+  </figure>
+  <figure>
+    <a href="{{ '/docs/attrition-manual/phone/orientation-2-enemy-vanguard.png' | relative_url }}">
+      <img src="{{ '/docs/attrition-manual/phone/orientation-2-enemy-vanguard.png' | relative_url }}" alt="Phone screenshot of the Enemy Vanguard orientation card explaining the opponent command zone" loading="lazy">
+    </a>
+    <figcaption><strong>2.</strong> Locate the enemy vanguard.</figcaption>
+  </figure>
+  <figure>
+    <a href="{{ '/docs/attrition-manual/phone/orientation-3-command-deck.png' | relative_url }}">
+      <img src="{{ '/docs/attrition-manual/phone/orientation-3-command-deck.png' | relative_url }}" alt="Phone screenshot of the Your Command Deck orientation card explaining how to deal a front-line card" loading="lazy">
+    </a>
+    <figcaption><strong>3.</strong> Find your command deck.</figcaption>
+  </figure>
+  <figure>
+    <a href="{{ '/docs/attrition-manual/phone/orientation-4-boneyard-manual.png' | relative_url }}">
+      <img src="{{ '/docs/attrition-manual/phone/orientation-4-boneyard-manual.png' | relative_url }}" alt="Phone screenshot of the Boneyard and Field Manual orientation card" loading="lazy">
+    </a>
+    <figcaption><strong>4.</strong> Learn where casualties and answers go.</figcaption>
+  </figure>
+</div>
+
+The photographed sequence is the original four-card briefing. The current issue adds a fifth **Ready for Command** card and requires you to open the highlighted Field Manual before the tour concludes. Command has retained the superseded pagination as an authentic instruction-booklet feature.
+
+Read the **Field Command Briefing**, then select **Issue Orders & Engage** when your orders are ready.
 
 | When you want to… | Your order |
 | --- | --- |
@@ -67,17 +219,61 @@ Open the game, read the **Field Command Briefing**, and select **Issue Orders & 
 | Review the action or rules | Open the book icon beside the turn counter. |
 | Inspect the opposition | Select the commander's name to open their dossier. |
 
+<div class="attrition-plate">
+  <div class="attrition-shot">
+    <img src="{{ '/docs/attrition-manual/phone/table-ready.png' | relative_url }}" alt="Phone screenshot of the empty Attrition table before the first clash, marked with six numbered callouts" loading="lazy">
+    <span class="attrition-pin" style="left: 24%; top: 18%;">1</span>
+    <span class="attrition-pin" style="left: 90%; top: 18%;">2</span>
+    <span class="attrition-pin" style="left: 15%; top: 49%;">3</span>
+    <span class="attrition-pin" style="left: 14%; top: 59%;">4</span>
+    <span class="attrition-pin" style="left: 11%; top: 91%;">5</span>
+    <span class="attrition-pin" style="left: 87%; top: 91%;">6</span>
+  </div>
+  <div>
+    <p class="attrition-plate-caption">Plate I · The table before first contact</p>
+    <ol class="attrition-callouts">
+      <li><span class="attrition-number">1</span><span><strong>Enemy command.</strong> Select the commander's identity when you want to inspect their dossier.</span></li>
+      <li><span class="attrition-number">2</span><span><strong>Enemy deck.</strong> Its badge reports how many cards remain in the opposing army.</span></li>
+      <li><span class="attrition-number">3</span><span><strong>Turn counter and Field Manual.</strong> The book is always available when you need the Chronicle, rules, Hall of Valor, or dossiers.</span></li>
+      <li><span class="attrition-number">4</span><span><strong>Boneyard.</strong> Defeated cards gather here and remain out of play for the rest of the War.</span></li>
+      <li><span class="attrition-number">5</span><span><strong>Your command deck.</strong> Tap it when prompted to deploy the next card.</span></li>
+      <li><span class="attrition-number">6</span><span><strong>Your command.</strong> This identifies your side and repeats the number of cards still available.</span></li>
+    </ol>
+  </div>
+</div>
+
 Your deck count tells you what remains available. Cards at stake are already committed to the table. Watch both: a healthy-looking engagement can leave very little behind it to support the next Battle.
 
 The new clash scenes send two small infantry formations charging into one another when a comparison has a winner. They collide, recoil, and tumble according to the result. Commander portraits also react to meaningful events. A successful rescue is considerably more satisfying when the person across the table has a face.
 
 The cards determine the outcome. The troops act it out. There is no extra timing challenge hidden in the animation.
 
+<p class="attrition-back-link"><a href="#contents">↑ Back to contents</a></p>
+
 ## The Field Manual
 
 The book on the table is your permanent point of reference. Its four main sections are **Chronicle**, **Hall of Valor**, **Rules of Engagement**, and **Dossiers**. Inspecting a Boneyard casualty also opens a contextual **Card Reference** section.
 
 Here is what belongs in each compartment of the command satchel.
+
+<div class="attrition-plate">
+  <div class="attrition-shot">
+    <img src="{{ '/docs/attrition-manual/phone/field-manual-dossiers.png' | relative_url }}" alt="Phone screenshot of the Field Manual open to commander dossiers, marked with four numbered callouts" loading="lazy">
+    <span class="attrition-pin" style="left: 52%; top: 19%;">1</span>
+    <span class="attrition-pin" style="left: 51%; top: 30%;">2</span>
+    <span class="attrition-pin" style="left: 12%; top: 62%;">3</span>
+    <span class="attrition-pin" style="left: 82%; top: 94%;">4</span>
+  </div>
+  <div>
+    <p class="attrition-plate-caption">Plate II · Permanent reference in the field</p>
+    <ol class="attrition-callouts">
+      <li><span class="attrition-number">1</span><span><strong>Manual sections.</strong> Move among the Chronicle, Hall of Valor, Rules of Engagement, and Dossiers without leaving the current War.</span></li>
+      <li><span class="attrition-number">2</span><span><strong>Commander files.</strong> Choose a portrait or crest to review the records discovered for that commander.</span></li>
+      <li><span class="attrition-number">3</span><span><strong>Evidence records.</strong> Labels distinguish documented facts from attributed interpretations and more questionable testimony.</span></li>
+      <li><span class="attrition-number">4</span><span><strong>Back to Table.</strong> Close the reference and resume exactly where the engagement paused.</span></li>
+    </ol>
+  </div>
+</div>
 
 ![The Field Manual open to its Chronicle, recording a decisive clash and a Battle triggered by equal Sevens.]({{ '/docs/attrition-manual/field-manual.png' | relative_url }})
 
@@ -149,13 +345,32 @@ Select an inspectable card in the Boneyard to open its Card Reference. This extr
 
 If that card has earned distinctions, the reference links directly to its Hall of Valor service record. You can move from “what did I lose?” to “what had that card accomplished?” without hunting through the full roll of honor.
 
+<p class="attrition-back-link"><a href="#contents">↑ Back to contents</a></p>
+
 ## Campaign orders
 
 A **War** is one game. A **Campaign** is a three-War series. The story spans four chapters, twelve Wars altogether, with orders that build on what came before.
 
+<div class="attrition-plate">
+  <div class="attrition-shot">
+    <img src="{{ '/docs/attrition-manual/phone/campaign-orders.png' | relative_url }}" alt="Phone screenshot of the Campaign Orders briefing, marked with three numbered callouts" loading="lazy">
+    <span class="attrition-pin" style="left: 31%; top: 30%;">1</span>
+    <span class="attrition-pin" style="left: 22%; top: 48%;">2</span>
+    <span class="attrition-pin" style="left: 51%; top: 88%;">3</span>
+  </div>
+  <div>
+    <p class="attrition-plate-caption">Plate III · Orders before engagement</p>
+    <ol class="attrition-callouts">
+      <li><span class="attrition-number">1</span><span><strong>Opposing force.</strong> The first four-chapter journey assigns its commander as part of the story. Opponent choice opens for later custom Campaigns; the older photographed control predates that restriction.</span></li>
+      <li><span class="attrition-number">2</span><span><strong>Rules of Engagement.</strong> Read every active modifier before committing. Later chapters retain the constraints introduced by earlier ones.</span></li>
+      <li><span class="attrition-number">3</span><span><strong>Issue Orders & Engage.</strong> This confirms the assignment and begins the next War.</span></li>
+    </ol>
+  </div>
+</div>
+
 | Chapter | Orders | What you must manage |
 | --- | --- | --- |
-| **I — The Accord** | Classic rules | Challenge whenever the rules allow and your deck can supply a reinforcement. |
+| **I — The Accord** | Classic rules | Reinforcement opportunities are limited only by the cards in your deck. |
 | **II — The Closing Passes** | Limited Reserves | You have **five reinforcement uses across all three Wars**. They do not refill between Wars. |
 | **III — The Blind Wheel** | Limited Reserves + Fog of War | Keep that same five-use budget while casualty inspection and identifying historical combat details are sealed during each War. |
 | **IV — The War of Attrition** | Limited Reserves + Fog of War + Total War | All previous constraints remain, and the signed card margins across the three Wars determine the campaign result. |
@@ -167,6 +382,8 @@ Before Total War, winning more Wars than you lose wins the Campaign; equal wins 
 For example, **+3, +2, −10 = −5**. You won two Wars, but the Total War Campaign is a defeat. A zero cumulative margin is a draw. Suddenly, preserving one more card in a losing War matters to the final result.
 
 **Complete each three-War chapter to unlock the next. Victory is not required.** The first journey follows authored commander encounters and gradually reveals the story. After all four chapters are complete, custom Campaigns let you combine the three optional modifiers however you like, with three distinct opponents drawn from the full commander roster.
+
+<p class="attrition-back-link"><a href="#contents">↑ Back to contents</a></p>
 
 ## Know your opposition
 
@@ -205,17 +422,44 @@ These five commanders have distinct Challenge policies as well as portraits, exp
 
 Their dialogue responds to rescues, setbacks, narrow victories, and the progress of the campaign. Those moments are part of the recent work: the opposition now has more to say about the War you are actually fighting.
 
+<p class="attrition-back-link"><a href="#contents">↑ Back to contents</a></p>
+
 ## Between engagements
 
-Your profile brings together career statistics, achievements, and campaign history. The game now has **thirty-two visible achievements** divided into Milestones, Distinctions, and Prestige, alongside the individual card histories in the Hall of Valor. Five additional Anomalies remain hidden unless they are actually observed. Recent fixes also tightened statistics and settlement accounting, including awkward endings where a Battle exhausts an army.
+Your profile brings together career statistics, achievements, and campaign history. The game now has **thirty-four visible achievements** divided into Milestones, Distinctions, and Prestige, alongside the individual card histories in the Hall of Valor. Five additional Anomalies remain hidden unless they are actually observed. Recent fixes also tightened statistics and settlement accounting, including awkward endings where a Battle exhausts an army.
 
 Victorious Campaigns award tokens: one for the victory, with another for a positive cumulative card differential. Cosmetic unlocks and card backings give you something to spend that success on. A different backing changes the appearance of your cards without changing their strength.
 
-In **Settings**, choose a left-handed layout, Slow/Normal/Fast animation speed, sound effects, and whether animations play automatically. The presentation also respects reduced-motion preferences. Tutorial guidance can be switched on and its progress reset if you want another walk through the basics.
+**Settings** begins with Account and Data & Privacy, followed by ordinary preferences and cosmetic requisitions. Choose a left-handed layout, Slow/Normal/Fast animation speed, sound effects, and whether animations play automatically. The presentation also respects reduced-motion preferences. Tutorial guidance can be switched on, and **Replay tutorial** starts the table orientation again whenever you want another walk through the basics.
+
+The Data & Privacy section repeats your analytics choice and links directly to the privacy, support, and deletion pages. Optional analytics are never a condition of play: collection remains off unless the release is configured for it and you explicitly opt in, and turning it off prevents new events. The destructive career-reset shortcut shown in one older plate has been retired from ordinary Settings; the dedicated deletion page remains available when you actually want to remove application-owned local data.
+
+<div class="attrition-photo-grid three-up" aria-label="Three phone screenshots showing achievements and older Settings screens">
+  <figure>
+    <a href="{{ '/docs/attrition-manual/phone/achievements-prestige.png' | relative_url }}">
+      <img src="{{ '/docs/attrition-manual/phone/achievements-prestige.png' | relative_url }}" alt="Phone screenshot of the Prestige achievement list showing locked and unlocked achievements" loading="lazy">
+    </a>
+    <figcaption><strong>Career honors.</strong> The photographed profile had earned 20 of the 34 visible achievements.</figcaption>
+  </figure>
+  <figure>
+    <a href="{{ '/docs/attrition-manual/phone/settings-data-privacy.png' | relative_url }}">
+      <img src="{{ '/docs/attrition-manual/phone/settings-data-privacy.png' | relative_url }}" alt="Phone screenshot of an earlier Data and Privacy settings section with analytics, privacy, support, and deletion controls" loading="lazy">
+    </a>
+    <figcaption><strong>Data & Privacy.</strong> An earlier field issue; the live analytics control now reads <em>Turn off</em> when sharing is allowed.</figcaption>
+  </figure>
+  <figure>
+    <a href="{{ '/docs/attrition-manual/phone/settings-preferences-requisitions.png' | relative_url }}">
+      <img src="{{ '/docs/attrition-manual/phone/settings-preferences-requisitions.png' | relative_url }}" alt="Phone screenshot of Attrition preferences, animation speed, token balance, and card-back requisitions" loading="lazy">
+    </a>
+    <figcaption><strong>Preferences & requisitions.</strong> Comfort controls above; earned cosmetic card backs below.</figcaption>
+  </figure>
+</div>
 
 The table has layouts for phones, tablets, and desktop screens. You can play in the browser, and supported browsers can install it as a web app. Android packaging and release preparation have also been part of the work; the browser link above remains the direct way to jump in from this booklet.
 
 Attrition is ad-free. Optional usage analytics start disabled and require consent.
+
+<p class="attrition-back-link"><a href="#contents">↑ Back to contents</a></p>
 
 ## Notes from the quartermaster
 
