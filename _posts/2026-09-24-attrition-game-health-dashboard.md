@@ -442,39 +442,40 @@ This post is the interactive dashboard built from that data. Below is the exact 
   <div class="gh-header">
     <div class="gh-title-group">
       <h3>Attrition — Game Health Exploration</h3>
-      <p class="gh-subtitle">Consented GA4 Gameplay Telemetry · 28-Day Active Cohort (Aug 27 – Sep 23, 2026)</p>
+      <p class="gh-subtitle" id="gh-subtitle">Consented GA4 Gameplay Telemetry · 28-Day Active Cohort (Aug 27 – Sep 23, 2026)</p>
     </div>
     <div class="gh-badge-group">
       <span class="gh-badge green">Schema v3</span>
       <span class="gh-badge">GA4 Property 501489186</span>
       <span class="gh-badge">PGS v1 Aligned</span>
+      <span class="gh-badge" style="border-color: #2ecc71; color: #2ecc71;">Bi-Weekly Sync</span>
     </div>
   </div>
 
   <!-- Key Metrics Row -->
   <div class="gh-kpis">
     <div class="gh-kpi-card">
-      <div class="gh-kpi-val">38</div>
+      <div class="gh-kpi-val" id="kpi-completed-wars">38</div>
       <div class="gh-kpi-label">Completed Wars</div>
       <div class="gh-kpi-sub">Across 5 Commanders</div>
     </div>
     <div class="gh-kpi-card">
-      <div class="gh-kpi-val green">44.7%</div>
+      <div class="gh-kpi-val green" id="kpi-human-win-rate">44.7%</div>
       <div class="gh-kpi-label">Human Win Rate</div>
-      <div class="gh-kpi-sub">17 Player Victories</div>
+      <div class="gh-kpi-sub"><span id="kpi-player-wins">17</span> Player Victories</div>
     </div>
     <div class="gh-kpi-card">
-      <div class="gh-kpi-val red">55.3%</div>
+      <div class="gh-kpi-val red" id="kpi-ai-win-rate">55.3%</div>
       <div class="gh-kpi-label">AI Win Rate</div>
-      <div class="gh-kpi-sub">21 Opponent Victories</div>
+      <div class="gh-kpi-sub"><span id="kpi-opponent-wins">21</span> Opponent Victories</div>
     </div>
     <div class="gh-kpi-card">
-      <div class="gh-kpi-val amber">43.3%</div>
+      <div class="gh-kpi-val amber" id="kpi-unfiltered-noise">43.3%</div>
       <div class="gh-kpi-label">Unfiltered Noise</div>
       <div class="gh-kpi-sub">29 (not set) Stream Events</div>
     </div>
     <div class="gh-kpi-card">
-      <div class="gh-kpi-val green">85.7%</div>
+      <div class="gh-kpi-val green" id="kpi-analyst-vulnerability">85.7%</div>
       <div class="gh-kpi-label">Analyst Vulnerability</div>
       <div class="gh-kpi-sub">6 Wins in 7 Matches</div>
     </div>
@@ -1036,6 +1037,31 @@ This post is the interactive dashboard built from that data. Below is the exact 
       totalRow.cells[0].innerText = 'Filtered Clean Total';
     }
   }
+
+  // Dynamic Telemetry Hydration from assets/data/game-health.json
+  (function() {
+    fetch('{{ "/assets/data/game-health.json" | relative_url }}')
+      .then(res => res.ok ? res.json() : null)
+      .then(data => {
+        if (!data || !data.kpis) return;
+        const k = data.kpis;
+        const setVal = (id, val) => { const el = document.getElementById(id); if (el) el.innerText = val; };
+        if (k.completed_wars) setVal('kpi-completed-wars', k.completed_wars);
+        if (k.human_win_rate_pct) setVal('kpi-human-win-rate', k.human_win_rate_pct + '%');
+        if (k.player_wins) setVal('kpi-player-wins', k.player_wins);
+        if (k.ai_win_rate_pct) setVal('kpi-ai-win-rate', k.ai_win_rate_pct + '%');
+        if (k.opponent_wins) setVal('kpi-opponent-wins', k.opponent_wins);
+        if (k.unfiltered_noise_pct) setVal('kpi-unfiltered-noise', k.unfiltered_noise_pct + '%');
+        if (k.analyst_vulnerability_pct) setVal('kpi-analyst-vulnerability', k.analyst_vulnerability_pct + '%');
+        if (data.meta && data.meta.window_start && data.meta.window_end) {
+          const sub = document.getElementById('gh-subtitle');
+          if (sub) {
+            sub.innerText = `Consented GA4 Gameplay Telemetry · 28-Day Active Cohort (${data.meta.window_start} – ${data.meta.window_end}) · Synced Bi-Weekly`;
+          }
+        }
+      })
+      .catch(() => {});
+  })();
 </script>
 
 ---

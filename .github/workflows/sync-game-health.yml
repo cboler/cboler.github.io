@@ -1,0 +1,41 @@
+name: Sync Game Health Telemetry
+
+on:
+  schedule:
+    # Runs at 00:00 UTC on the 1st and 15th of every month (bi-weekly cadence)
+    - cron: '0 0 1,15 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-telemetry:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Query GA4 and Update Game Health Data
+        run: node scripts/sync-game-health.mjs
+        env:
+          GA4_SERVICE_ACCOUNT_KEY: ${{ secrets.GA4_SERVICE_ACCOUNT_KEY }}
+          GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID || '501489186' }}
+
+      - name: Commit and push if telemetry changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet assets/data/game-health.json; then
+            echo "Telemetry changes detected. Committing..."
+            git add assets/data/game-health.json
+            git commit -m "chore(telemetry): bi-weekly game health metrics sync"
+            git push origin main
+          else
+            echo "No telemetry changes to commit."
+          fi

@@ -41,6 +41,10 @@ That distinction matters. A clean story assembled afterward is not the same thin
 
 3. [**From Simulated Armies to Real Players**]({{ '/attrition-game-health/' | relative_url }}) — Development period: September 9–24, 2026. Bypassing native platform hurdles to build an interactive dashboard from consented GA4 telemetry, what our first 38 human-vs-AI Wars teach us about our commanders, and why 43% of un-filtered records reported `(not set)`.
 
+### Field Dispatches
+
+1. [**The Two-Week Pulse: Automating Attrition’s Game Health Telemetry**]({{ '/attrition-telemetry-pulse/' | relative_url }}) — September 24, 2026. How we turned our GA4 exploration into an automated bi-weekly data pipeline using GitHub Actions, the data freshness contract, and how fresh metrics flow into the static dashboard without a backend.
+
 ### Next in the record
 
 - **Turning a Card Game Into a Place** — the physical-table redesign, commanders, Chronicle, Hall of Valor, and Mont-Rouge campaign.

@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "schema_version": "1.0.0",
+    "telemetry_schema_version": "3",
+    "ruleset_version": "2026.09.1",
+    "property_id": "501489186",
+    "sync_cadence": "bi-weekly",
+    "cadence_days": 14,
+    "generated_at": "2026-09-24T05:23:00Z",
+    "window_start": "2026-08-27",
+    "window_end": "2026-09-23",
+    "window_days": 28,
+    "next_sync_scheduled": "2026-10-08T00:00:00Z",
+    "status": "healthy"
+  },
+  "kpis": {
+    "completed_wars": 38,
+    "player_wins": 17,
+    "opponent_wins": 21,
+    "human_win_rate_pct": 44.7,
+    "ai_win_rate_pct": 55.3,
+    "unfiltered_total_events": 67,
+    "unfiltered_noise_events": 29,
+    "unfiltered_noise_pct": 43.3,
+    "analyst_vulnerability_pct": 85.7
+  },
+  "commanders": [
+    {
+      "id": "quartermaster",
+      "name": "Marcel de Brie",
+      "title": "The Quartermaster",
+      "player_wins": 4,
+      "opponent_wins": 7,
+      "total_wars": 11,
+      "player_win_rate_pct": 36.4,
+      "opponent_win_rate_pct": 63.6,
+      "strategy_summary": "High card value weight (0.84), narrow gamble band (0.85). Careful reserve management pays off."
+    },
+    {
+      "id": "attritionist",
+      "name": "Bastien de Herve",
+      "title": "The Attritionist",
+      "player_wins": 3,
+      "opponent_wins": 6,
+      "total_wars": 9,
+      "player_win_rate_pct": 33.3,
+      "opponent_win_rate_pct": 66.7,
+      "strategy_summary": "Heavy deck sustainability penalty (-36). Grinds human players into late-game exhaustion."
+    },
+    {
+      "id": "analyst",
+      "name": "Matthias von Greyerz",
+      "title": "The Analyst",
+      "player_wins": 6,
+      "opponent_wins": 1,
+      "total_wars": 7,
+      "player_win_rate_pct": 85.7,
+      "opponent_win_rate_pct": 14.3,
+      "strategy_summary": "High win-rate weight (56) and pool strength (0.16). Highly predictable; exploited by human players."
+    },
+    {
+      "id": "gambler",
+      "name": "Sir Edmund Gloucester",
+      "title": "The Gambler",
+      "player_wins": 3,
+      "opponent_wins": 4,
+      "total_wars": 7,
+      "player_win_rate_pct": 42.9,
+      "opponent_win_rate_pct": 57.1,
+      "strategy_summary": "Broadest gamble band (1.35) and zero depletion penalty. High variance, near-even results."
+    },
+    {
+      "id": "cornered-general",
+      "name": "Lorenzo di Taleggio",
+      "title": "The Cornered General",
+      "player_wins": 1,
+      "opponent_wins": 3,
+      "total_wars": 4,
+      "player_win_rate_pct": 25.0,
+      "opponent_win_rate_pct": 75.0,
+      "strategy_summary": "Severe desperation bonus (58 at <= 3 cards). Counter-attacks with lethal intensity."
+    }
+  ],
+  "wars": {
+    "buckets": [
+      { "label": "1 – 15 Turns (Abrupt Collapse)", "count": 5, "pct": 13.2, "notes": "Early recursive Battles or severe challenge failures wiping reserves quickly." },
+      { "label": "16 – 30 Turns (Modal Pacing)", "count": 22, "pct": 57.9, "notes": "Standard war progression matching 22.4 median turn Monte Carlo model." },
+      { "label": "31 – 41 Turns (Extended Sieges)", "count": 10, "pct": 26.3, "notes": "Stubborn attrition defense, especially against Bastien and Marcel." },
+      { "label": "42 – 51 Turns (The Marathon Zone)", "count": 1, "pct": 2.6, "notes": "Single 43-turn marathon observed! Validates Marathon achievement." }
+    ]
+  },
+  "battles": {
+    "outright_rescue_pct": 52.8,
+    "failed_rescue_pct": 36.1,
+    "tie_escalating_to_battle_pct": 11.1
+  },
+  "play_stats": [
+    { "key": "wars_fought", "name": "Wars Fought", "aggregation": "COUNT(turns)", "value": 38, "unit": "Wars", "desc": "Total completed Wars (wins, losses, ties)." },
+    { "key": "wars_won", "name": "Wars Won", "aggregation": "SUM(player_win)", "value": 17, "unit": "Wins", "desc": "Completed Wars ending in player victory." },
+    { "key": "comeback_victories", "name": "Comeback Victories", "aggregation": "COUNT(deficit >= 3)", "value": 4, "unit": "Wars", "desc": "Victories after trailing by 3+ cards at turn start." },
+    { "key": "greatest_comeback", "name": "Greatest Comeback", "aggregation": "MAX(deficit)", "value": 6, "unit": "Cards", "desc": "Largest deficit overcome in victory (Competitive)." },
+    { "key": "battles_fought", "name": "Battles Fought", "aggregation": "SUM(battles)", "value": 54, "unit": "Battles", "desc": "Distinct Battles entered across completed Wars." },
+    { "key": "deepest_battle", "name": "Deepest Battle", "aggregation": "MAX(deepest_battle)", "value": 3, "unit": "Layers", "desc": "Most 3-card sacrifice layers dealt in one Battle." },
+    { "key": "longest_war", "name": "Longest War", "aggregation": "MAX(turns)", "value": 43, "unit": "Turns", "desc": "Most turns in one completed War." },
+    { "key": "reinforcements_sent", "name": "Reinforcements Sent", "aggregation": "SUM(reinforcements)", "value": 72, "unit": "Cards", "desc": "Player Challenge reinforcement cards committed." },
+    { "key": "successful_reinforcements", "name": "Successful Reinforcements", "aggregation": "SUM(rescues)", "value": 38, "unit": "Rescues", "desc": "Reinforcements winning outright (52.8% rescue rate)." },
+    { "key": "aces_felled_by_twos", "name": "Aces Felled by Twos", "aggregation": "SUM(two_beats_ace)", "value": 11, "unit": "Aces", "desc": "Opponent Aces directly beaten by human Twos." },
+    { "key": "astronomical_anomalies_observed", "name": "Astronomical Anomalies Observed", "aggregation": "SUM(anomalies)", "value": 2, "unit": "Anomalies", "desc": "Astronomically rare deck/battle events confirmed." }
+  ],
+  "rare_events": {
+    "achievement_unlocks": 68,
+    "achievement_observations": 19,
+    "astronomical_anomalies_wars": 2
+  },
+  "surfaces": [
+    { "surface": "Field Manual & Rules", "unique_sessions": 64, "behavior": "Checking 2-defeats-Ace exception and Battle escalation rules." },
+    { "surface": "The Chronicle", "unique_sessions": 48, "behavior": "Inspecting past campaign progress and historic war timelines." },
+    { "surface": "Hall of Valor & Profiles", "unique_sessions": 39, "behavior": "Viewing veteran cards, service records, and medal citations." },
+    { "surface": "Settings & Telemetry Consent", "unique_sessions": 55, "behavior": "Auditing privacy settings and managing sound/animation toggles." }
+  ]
+}
