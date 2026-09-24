@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'From Simulated Armies to Real Players: The Attrition Game Health Dashboard'
-date: 2026-09-24 10:00:00 -0500
+date: 2026-09-24 00:01:00 -0500
 categories: [games, technology]
 tags: [attrition, game-development, telemetry, analytics, dashboard, google-analytics]
 permalink: /attrition-game-health/

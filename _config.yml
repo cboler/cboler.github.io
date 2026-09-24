@@ -3,6 +3,7 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 google_analytics: G-W33X68MWKZ
+future: true
 minima:
   skin: solarized-dark
   social_links:
