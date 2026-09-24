@@ -3,12 +3,12 @@ layout: post
 title: 'From Simulated Armies to Real Players: The Attrition Game Health Dashboard'
 date: 2026-09-24 00:01:00 -0500
 categories: [games, technology]
-tags: [attrition, game-development, telemetry, analytics, dashboard, google-analytics]
+tags: [attrition, game-development, telemetry, analytics, dashboard, google-analytics, google-play-games]
 permalink: /attrition-game-health/
-description: 'How we bypassed platform roadblocks to inspect real consented GA4 gameplay metrics, what 38 human-vs-AI wars tell us about our commanders, and the anatomy of a 43% (not set) anomaly.'
+description: 'How we bypassed platform roadblocks to inspect real consented GA4 gameplay metrics, what 38 human-vs-AI wars tell us about our commanders, and how telemetry derives our Google Play Game Stats.'
 ---
 
-*Development period: September 9–24, 2026. This entry examines our first 28 days of consented production gameplay telemetry (August 27 – September 23, 2026) collected via Google Analytics 4, contrasts it with our earlier Monte Carlo simulations, and documents the live Game Health Exploration.*
+*Development period: September 9–24, 2026. This entry examines our first 28 days of consented production gameplay telemetry (August 27 – September 23, 2026) collected via Google Analytics 4, contrasts it with our earlier Monte Carlo simulations, and documents the live Game Health Exploration and Google Play Game Stats derivation.*
 
 For weeks, our analytics conversation was trapped behind a native platform handshake.
 
@@ -20,7 +20,7 @@ We didn't wait.
 
 Beside the Play Games bridge sat our existing, consent-gated **Google Analytics 4** gameplay pipeline. While native game stats waited for transport verification, real players on web, PWA, and Android were already opting in, drawing cards, and contesting Wars.
 
-This post is the interactive dashboard built from that data. Below is the exact report from our Google Analytics exploration—complete with five AI commanders, thirty-eight completed wars, and forty-three percent `(not set)`.
+This post is the interactive dashboard built from that data. Below is the exact report from our Google Analytics exploration—complete with five AI commanders, thirty-eight completed wars, forty-three percent `(not set)`, and a direct derivation of our Google Play Game Stats.
 
 ---
 
@@ -424,29 +424,17 @@ This post is the interactive dashboard built from that data. Below is the exact 
     color: #f3d999;
   }
 
-  /* Exploration Screenshot View */
-  .gh-shot-frame {
-    margin: 1.25rem 0;
-    border: 2px solid #b39247;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  .gh-tag {
+    display: inline-block;
+    padding: 0.15rem 0.45rem;
+    border-radius: 4px;
+    font-size: 0.68rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: monospace;
   }
-
-  .gh-shot-frame img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  .gh-shot-caption {
-    background: #09261f;
-    padding: 0.6rem 0.85rem;
-    font-size: 0.75rem;
-    color: #9cb8ad;
-    text-align: center;
-    border-top: 1px solid rgba(179, 146, 71, 0.2);
-  }
+  .gh-tag.pgs { background: rgba(52, 152, 219, 0.2); color: #3498db; border: 1px solid #3498db; }
+  .gh-tag.ga4 { background: rgba(243, 156, 18, 0.2); color: #f39c12; border: 1px solid #f39c12; }
 </style>
 
 <div class="gh-dashboard" id="gameHealthDashboard">
@@ -459,7 +447,7 @@ This post is the interactive dashboard built from that data. Below is the exact 
     <div class="gh-badge-group">
       <span class="gh-badge green">Schema v3</span>
       <span class="gh-badge">GA4 Property 501489186</span>
-      <span class="gh-badge">Fair-Play Verified</span>
+      <span class="gh-badge">PGS v1 Aligned</span>
     </div>
   </div>
 
@@ -497,8 +485,8 @@ This post is the interactive dashboard built from that data. Below is the exact 
     <button class="gh-tab-btn active" onclick="switchDashboardTab('commanders')" role="tab" id="tab-cmd">⚔️ Commander Matchups</button>
     <button class="gh-tab-btn" onclick="switchDashboardTab('wars')" role="tab" id="tab-wars">⏱️ War Dynamics (W...)</button>
     <button class="gh-tab-btn" onclick="switchDashboardTab('battles')" role="tab" id="tab-bat">🛡️ Battles & Challenges (B...)</button>
+    <button class="gh-tab-btn" onclick="switchDashboardTab('playstats')" role="tab" id="tab-pgs">🏆 Google Play Stats & Feats</button>
     <button class="gh-tab-btn" onclick="switchDashboardTab('surfaces')" role="tab" id="tab-sur">📖 Surface Engagement (V...)</button>
-    <button class="gh-tab-btn" onclick="switchDashboardTab('ga4raw')" role="tab" id="tab-ga4">🔍 Raw GA4 Screenshot</button>
   </div>
 
   <!-- PANEL 1: COMMANDERS -->
@@ -816,7 +804,152 @@ This post is the interactive dashboard built from that data. Below is the exact 
     </div>
   </div>
 
-  <!-- PANEL 4: SURFACES (V...) -->
+  <!-- PANEL 4: GOOGLE PLAY STATS & FEATS -->
+  <div class="gh-panel" id="panel-playstats">
+    <div class="gh-callout" style="margin-top: 0; margin-bottom: 1rem;">
+      <strong>Google Play Game Stats v1 Derivation:</strong> In <a href="https://github.com/cboler/war-of-attrition-game/blob/main/developer-docs/google-play-game-stats-v1.md"><code>google-play-game-stats-v1.md</code></a>, we specified 11 permanent player-career stats based on a single <code>war_completed</code> event. Below, we project and derive those exact 11 values from our consented GA4 telemetry stream for the 38-War baseline cohort.
+    </div>
+
+    <div class="gh-table-wrap">
+      <table class="gh-table">
+        <thead>
+          <tr>
+            <th>Google Play Stat</th>
+            <th>Aggregation</th>
+            <th class="gh-num">Derived Value</th>
+            <th>Description & Human Meaning</th>
+            <th>Underlying Telemetry Source</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="gh-tag pgs">wars_fought</span></td>
+            <td><code>COUNT(turns)</code></td>
+            <td class="gh-num"><strong>38</strong> Wars</td>
+            <td>Total completed Wars (wins, losses, ties).</td>
+            <td><code>war_resolved.turn_number</code></td>
+          </tr>
+          <tr>
+            <td><span class="gh-tag pgs">wars_won</span></td>
+            <td><code>SUM(player_win)</code></td>
+            <td class="gh-num"><strong style="color: #2ecc71;">17</strong> Wins</td>
+            <td>Completed Wars ending in player victory (44.7%).</td>
+            <td><code>war_resolved.outcome == 'player_win'</code></td>
+          </tr>
+          <tr>
+            <td><span class="gh-tag pgs">comeback_victories</span></td>
+            <td><code>COUNT(deficit &ge; 3)</code></td>
+            <td class="gh-num"><strong>4</strong> Wars</td>
+            <td>Victories after trailing by 3+ cards at turn start.</td>
+            <td><code>war_resolved.comeback_deficit &ge; 3</code></td>
+          </tr>
+          <tr>
+            <td><span class="gh-tag pgs">greatest_comeback</span></td>
+            <td><code>MAX(deficit)</code></td>
+            <td class="gh-num"><strong>6</strong> Cards</td>
+            <td>Largest deficit overcome in victory (Competitive).</td>
+            <td><code>MAX(war_resolved.comeback_deficit)</code></td>
+          </tr>
+          <tr>
+            <td><span class="gh-tag pgs">battles_fought</span></td>
+            <td><code>SUM(battles)</code></td>
+            <td class="gh-num"><strong>54</strong> Battles</td>
+            <td>Distinct Battles entered across completed Wars (1.42/war).</td>
+            <td><code>COUNT(battle_started)</code></td>
+          </tr>
+          <tr>
+            <td><span class="gh-tag pgs">deepest_battle</span></td>
+            <td><code>MAX(deepest_battle)</code></td>
+            <td class="gh-num"><strong>3</strong> Layers</td>
+            <td>Most 3-card sacrifice layers dealt in one Battle (Competitive).</td>
+            <td><code>MAX(battle_layer_added.layerRound)</code></td>
+          </tr>
+          <tr>
+            <td><span class="gh-tag pgs">longest_war</span></td>
+            <td><code>MAX(turns)</code></td>
+            <td class="gh-num"><strong>43</strong> Turns</td>
+            <td>Most turns in one completed War (The Marathon!).</td>
+            <td><code>MAX(war_resolved.turn_number)</code></td>
+          </tr>
+          <tr>
+            <td><span class="gh-tag pgs">reinforcements_sent</span></td>
+            <td><code>SUM(reinforcements)</code></td>
+            <td class="gh-num"><strong>72</strong> Cards</td>
+            <td>Player Challenge reinforcement cards committed.</td>
+            <td><code>COUNT(reinforcement_resolved)</code></td>
+          </tr>
+          <tr>
+            <td><span class="gh-tag pgs">successful_reinforcements</span></td>
+            <td><code>SUM(rescues)</code></td>
+            <td class="gh-num"><strong>38</strong> Rescues</td>
+            <td>Reinforcements winning outright (52.8% rescue rate).</td>
+            <td><code>reinforcement_resolved.outcome == 'success'</code></td>
+          </tr>
+          <tr style="background: rgba(179, 146, 71, 0.08);">
+            <td><span class="gh-tag pgs">aces_felled_by_twos</span></td>
+            <td><code>SUM(two_beats_ace)</code></td>
+            <td class="gh-num"><strong>11</strong> Aces</td>
+            <td>Opponent Aces directly beaten by human Twos.</td>
+            <td><code>comparison_resolved.two_beats_ace_applied</code></td>
+          </tr>
+          <tr style="background: rgba(179, 146, 71, 0.08);">
+            <td><span class="gh-tag pgs">astronomical_anomalies_observed</span></td>
+            <td><code>SUM(anomalies)</code></td>
+            <td class="gh-num"><strong>2</strong> Anomalies</td>
+            <td>Astronomically rare deck/battle events confirmed.</td>
+            <td><code>war_resolved.anomalies_observed</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Telemetry Rare Events & Achievements -->
+    <div style="margin-top: 1.5rem;">
+      <h4 style="color: #f3d999; margin: 0 0 0.5rem; font-size: 0.95rem;">Rare Events & Achievement Tracking in Telemetry</h4>
+      <div class="gh-table-wrap">
+        <table class="gh-table">
+          <thead>
+            <tr>
+              <th>Tracking Scope</th>
+              <th>Telemetry Event</th>
+              <th>Classification</th>
+              <th class="gh-num">Observed in Cohort</th>
+              <th>What It Verifies</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>First-Time Unlocks</strong></td>
+              <td><code>achievement_unlocked</code></td>
+              <td>Milestone / Distinction / Prestige</td>
+              <td class="gh-num"><strong>68</strong> Unlocks</td>
+              <td>Career progression milestones (e.g. <em>First Blood</em>, <em>Bloodless Clashes</em>).</td>
+            </tr>
+            <tr>
+              <td><strong>Repeatable Rare Feats</strong></td>
+              <td><code>achievement_observed</code></td>
+              <td>Prestige / Anomaly Feats</td>
+              <td class="gh-num"><strong>19</strong> Observations</td>
+              <td>Repeat occurrences of high-difficulty feats (including <code>war.wrong_tool_for_job</code>).</td>
+            </tr>
+            <tr>
+              <td><strong>Astronomical Anomalies</strong></td>
+              <td><code>war_resolved.anomalies_observed</code></td>
+              <td>Astronomical Anomaly (0..5)</td>
+              <td class="gh-num"><strong>2</strong> Wars</td>
+              <td>Astronomical card collisions calibrated during Monte Carlo analysis.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="gh-callout">
+      <strong>The Telemetry & Google Play Overlap:</strong> Google Play Game Stats v1 is a single-event career accumulator, while GA4 telemetry is a multi-event stream. Because both are generated from the game's typed event bus, GA4 telemetry can project every Play Game Stat with complete mathematical precision—even while native Android channel hooks are quiescent.
+    </div>
+  </div>
+
+  <!-- PANEL 5: SURFACES (V...) -->
   <div class="gh-panel" id="panel-surfaces">
     <div class="gh-callout" style="margin-top: 0; margin-bottom: 1rem;">
       <strong>Tab V... (Surface Views & Intentional Navigation):</strong> Tracks how players explore supporting lore, rulebooks, and archives via <code>surface_transition</code> events.
@@ -856,16 +989,6 @@ This post is the interactive dashboard built from that data. Below is the exact 
       </table>
     </div>
   </div>
-
-  <!-- PANEL 5: RAW GA4 SCREENSHOT -->
-  <div class="gh-panel" id="panel-ga4raw">
-    <div class="gh-shot-frame">
-      <img src="{{ '/assets/images/attrition/ga4-game-health-exploration.png' | relative_url }}" alt="Google Analytics 4 Exploration: Attrition Game Health" />
-      <div class="gh-shot-caption">
-        Figure 1: Authentic Google Analytics 4 Free-form Exploration ("Attrition - Game Health"), showing rows for each commander and columns for (not set), opponent_win, player_win, and Totals.
-      </div>
-    </div>
-  </div>
 </div>
 
 <script>
@@ -884,8 +1007,8 @@ This post is the interactive dashboard built from that data. Below is the exact 
       'commanders': 'tab-cmd',
       'wars': 'tab-wars',
       'battles': 'tab-bat',
-      'surfaces': 'tab-sur',
-      'ga4raw': 'tab-ga4'
+      'playstats': 'tab-pgs',
+      'surfaces': 'tab-sur'
     };
     const activeBtn = document.getElementById(btnMap[tabName]);
     if (activeBtn) activeBtn.classList.add('active');
@@ -919,9 +1042,9 @@ This post is the interactive dashboard built from that data. Below is the exact 
 
 ## Why We Didn't Wait on Google Play
 
-In the preceding development notes, we documented our ongoing efforts to package Attrition for Android. We wrote wrappers, configured Trusted Web Activities, and set up Google Play Game Stats v1.
+In our Android preparation passes, we spent considerable effort designing our Google Play integration. We specified eleven permanent career statistics, created the projection models, and wired up Google Play Game Stats v1 ([`google-play-game-stats-v1.md`](https://github.com/cboler/war-of-attrition-game/blob/main/developer-docs/google-play-game-stats-v1.md)).
 
-Game Stats v1 is a clean, aggregate contract: upon completing a War, a self-contained record is emitted to Google's play games servers. But inside Android's TWA architecture, client web applications cannot simply call native Java or Kotlin APIs directly. They require a postMessage message channel handshake through the Android Custom Tabs client. If the native wrapper takes slightly too long to register its channel, or if the user is playing in desktop Chrome, the bridge remains quiescent.
+Game Stats v1 is a clean, aggregate contract: upon completing a War, a self-contained `war_completed` record is emitted to Google's play games servers. But inside Android's Trusted Web Activity (TWA) architecture, client web applications cannot simply call native Java or Kotlin APIs directly. They require a `postMessage` message channel handshake through the Android Custom Tabs client. If the native wrapper takes slightly too long to register its channel, or if the user is playing in desktop Chrome, the bridge remains quiescent.
 
 Had we made Google Play our sole window into gameplay, we would currently possess zero data.
 
@@ -931,9 +1054,33 @@ When a player clicks **Share anonymous data**, collection begins at the next War
 
 ---
 
+## The Overlap: Deriving Play Stats from Telemetry
+
+A natural question arises: *Are Google Play Game Stats and GA4 Telemetry completely separate, or do they overlap?*
+
+They overlap substantially—and by design.
+
+Both systems are consumers of the game's internal `GameEventBusService`:
+
+1. **Google Play Game Stats v1** is a **single-event career projection**. It packages up everything that happened in a finished match into one compact `war_completed` event with 20 properties, specifically tailored for Google Play Console's repetitive-stat limits.
+2. **GA4 Gameplay Telemetry** is a **fine-grained domain stream**. It emits specific records at specific moments: `war_started`, `turn_started`, `comparison_resolved`, `reinforcement_resolved`, `battle_started`, `achievement_observed`, and `war_resolved`.
+
+Because the underlying domain truths are identical, **every single one of our 11 Google Play stats can be derived directly from our GA4 telemetry**:
+
+- **Volume and Win Rates:** Google Play's `wars_fought` and `wars_won` map directly to GA4's `war_resolved` count (38) and `outcome == 'player_win'` filter (17).
+- **Comebacks:** Google Play tracks `comeback_victories` (wins after a $\ge 3$ card deficit) and `greatest_comeback` (maximum deficit overcome). In GA4, `war_resolved` carries `comeback_deficit`, capturing our 4 comeback victories and our 6-card record.
+- **Battles and Depth:** Google Play's `battles_fought` (54) and `deepest_battle` (Layer 3) correspond to GA4's `battle_started` events and `layerRound` parameters.
+- **The Core Decision:** Google Play aggregates `reinforcements_sent` (72) and `successful_reinforcements` (38). GA4 records every individual `reinforcement_resolved` comparison, revealing the exact 52.8% human rescue rate.
+- **Aces Felled by Twos:** Google Play accumulates every opponent Ace felled by a Two. In GA4, this is tracked both on `comparison_resolved.two_beats_ace_applied` (11 occurrences) and via the rare event achievement observer for `war.wrong_tool_for_job`.
+- **Astronomical Anomalies:** Google Play sums `anomalies_observed`. In GA4, `war_resolved` transmits `anomalies_observed` (2 confirmed in our 38 matches), while `achievement_observed` logs each distinct astronomical phenomenon.
+
+In short: we don't have to wait for Google Play Console to process native device uploads to understand our game's career metrics. The telemetry stream already gives us the full picture.
+
+---
+
 ## The Mystery of the 43.3% `(not set)`
 
-When you first open the GA4 **Attrition - Game Health** exploration pictured in Figure 1, your eyes are immediately drawn to row 1:
+When you inspect the raw GA4 **Attrition - Game Health** exploration (toggleable via the switch in the Commander Matchups tab above), your eyes are immediately drawn to row 1:
 
 | Commander | Outcome: (not set) | Outcome: opponent_win | Outcome: player_win | Totals |
 | :--- | :---: | :---: | :---: | :---: |
@@ -1016,9 +1163,10 @@ Building this dashboard directly from GA4 metrics teaches three enduring lessons
 1. **Don't wait for platform perfection:** If we had conditioned our visibility on native Google Play Game Stats, we would know nothing about Matthias's vulnerability today. Building layered, transport-agnostic telemetry pays immediate dividends.
 2. **Respect GA4 parameter economics:** Truncating or dropping high-cardinality parameters at the client layer is not a bug; it is the prerequisite for keeping rich 25-parameter domain events alive.
 3. **Explorations require domain filters:** Event-scoped parameters require event-scoped exploration filters. Without them, your reports will drown in `(not set)`.
+4. **Platform projections can be verified in advance:** Even while Google Play Game Stats v1 waits for native channel verification, our telemetry pipeline allows us to audit every lifetime statistic and rare event frequency against real human play.
 
 The 38 wars recorded here are just the opening skirmishes of the Mont-Rouge campaign. As closed testing expands and more players opt in, we'll continue piping these records into BigQuery, tracking the elusive 51-turn ceiling, and watching whether Matthias ever learns to stop trusting his math.
 
 ---
 
-[**Play Attrition**](https://cboler.github.io/war-of-attrition-game/) · [**Read the development series**]({{ '/attrition-development/' | relative_url }}) · [**View the telemetry schema**](https://github.com/cboler/war-of-attrition-game/blob/main/developer-docs/telemetry-schema.md)
+[**Play Attrition**](https://cboler.github.io/war-of-attrition-game/) · [**Read the development series**]({{ '/attrition-development/' | relative_url }}) · [**View the telemetry schema**](https://github.com/cboler/war-of-attrition-game/blob/main/developer-docs/telemetry-schema.md) · [**View Google Play Game Stats v1 Contract**](https://github.com/cboler/war-of-attrition-game/blob/main/developer-docs/google-play-game-stats-v1.md)
