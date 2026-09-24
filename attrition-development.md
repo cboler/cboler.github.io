@@ -39,11 +39,12 @@ That distinction matters. A clean story assembled afterward is not the same thin
 
 2. [**Rare Is Not the Same Word as Impossible**]({{ '/attrition-monte-carlo/' | relative_url }}) — Development period: September 7–8, 2026. The preliminary Monte Carlo work that changed achievement thresholds, separated visible feats from hidden anomalies, and gave the telemetry a scientific question to answer.
 
+3. [**From Simulated Armies to Real Players**]({{ '/attrition-game-health/' | relative_url }}) — Development period: September 9–24, 2026. Bypassing native platform hurdles to build an interactive dashboard from consented GA4 telemetry, what our first 38 human-vs-AI Wars teach us about our commanders, and why 43% of un-filtered records reported `(not set)`.
+
 ### Next in the record
 
 - **Turning a Card Game Into a Place** — the physical-table redesign, commanders, Chronicle, Hall of Valor, and Mont-Rouge campaign.
 - **Closed Testing Is Development** — tester discoveries, release candidates, physical-device checks, and the feedback-to-regression-test loop.
-- **From Simulated Armies to Real Players** — GA4, BigQuery, schema corrections, and comparing modeled behavior with observed decisions.
 - **Who Is Actually Building This?** — human judgment, conversational context, implementation agents, handoffs, failures, and the limits of anthropomorphic language.
 
 Future development notes will join this page as **Field Dispatches** rather than being folded silently into the old posts.
