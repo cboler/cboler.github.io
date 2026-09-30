@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.0.0",
+  "property_id": "501489186",
+  "sync_cadence": "bi-weekly",
+  "cadence_days": 14,
+  "updated_at": "2026-09-24T05:23:00Z",
+  "latest": "2026-09-23",
+  "next_sync_scheduled": "2026-10-01T00:00:00.000Z",
+  "notes": [
+    "Snapshots cover non-overlapping periods, so counts may be summed across periods.",
+    "Rates must be recomputed from summed counts, never averaged.",
+    "A null section means GA4 could not supply it for that period; it is never back-filled from older data."
+  ],
+  "commanders": [
+    {
+      "id": "quartermaster",
+      "name": "Marcel de Brie",
+      "title": "The Quartermaster",
+      "portrait": "/assets/images/attrition/commanders/quartermaster.jpg",
+      "strategy": "High card value weight (0.84) and a narrow gamble band (0.85). Careful reserve management pays off."
+    },
+    {
+      "id": "attritionist",
+      "name": "Bastien de Herve",
+      "title": "The Attritionist",
+      "portrait": "/assets/images/attrition/commanders/attritionist.jpg",
+      "strategy": "Heavy deck sustainability penalty (-36). Grinds human players into late-game exhaustion."
+    },
+    {
+      "id": "analyst",
+      "name": "Matthias von Greyerz",
+      "title": "The Analyst",
+      "portrait": "/assets/images/attrition/commanders/analyst.jpg",
+      "strategy": "High win-rate weight (56) and pool strength (0.16). Highly predictable, and exploited by human players."
+    },
+    {
+      "id": "gambler",
+      "name": "Sir Edmund Gloucester",
+      "title": "The Gambler",
+      "portrait": "/assets/images/attrition/commanders/gambler.jpg",
+      "strategy": "Broadest gamble band (1.35) and zero depletion penalty. High variance, near-even results."
+    },
+    {
+      "id": "cornered-general",
+      "name": "Lorenzo di Taleggio",
+      "title": "The Cornered General",
+      "portrait": "/assets/images/attrition/commanders/cornered-general.jpg",
+      "strategy": "Severe desperation bonus (58 at <= 3 cards). Counter-attacks with lethal intensity."
+    }
+  ],
+  "snapshots": [
+    {
+      "id": "2026-09-23",
+      "path": "snapshots/2026-09-23.json",
+      "period_start": "2026-08-27",
+      "period_end": "2026-09-23",
+      "period_days": 28,
+      "generated_at": "2026-09-24T05:23:00Z",
+      "source": "ga4-exploration-baseline",
+      "completed_wars": 38,
+      "human_win_rate_pct": 44.7
+    }
+  ]
+}

@@ -45,6 +45,10 @@ That distinction matters. A clean story assembled afterward is not the same thin
 
 1. [**The Two-Week Pulse: Automating Attrition’s Game Health Telemetry**]({{ '/attrition-telemetry-pulse/' | relative_url }}) — September 24, 2026. How we turned our GA4 exploration into an automated bi-weekly data pipeline using GitHub Actions, the data freshness contract, and how fresh metrics flow into the static dashboard without a backend.
 
+2. [**Lamplight: Giving the Attrition Table a Pulse**]({{ '/attrition-lamplight/' | relative_url }}) — September 29, 2026. Release 4.3.0's three.js presentation layer: a lamp-lit felt, sparks that know who won, Battles that heat the room, and why none of it touches a rule.
+
+3. [**Keeping the Ledger: Attrition Telemetry Now Remembers**]({{ '/attrition-telemetry-ledger/' | relative_url }}) — September 29, 2026. A correction to the Two-Week Pulse: immutable, non-overlapping snapshots, CSV exports for research, and a dashboard that can switch between periods.
+
 ### Next in the record
 
 - **Turning a Card Game Into a Place** — the physical-table redesign, commanders, Chronicle, Hall of Valor, and Mont-Rouge campaign.

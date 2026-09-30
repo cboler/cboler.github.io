@@ -2,12 +2,25 @@ name: Sync Game Health Telemetry
 
 on:
   schedule:
-    # Runs at 00:00 UTC on the 1st and 15th of every month (bi-weekly cadence)
+    # 00:00 UTC on the 1st and 15th of every month (bi-weekly cadence)
     - cron: '0 0 1,15 * *'
   workflow_dispatch:
+    inputs:
+      period_start:
+        description: 'Optional explicit period start (YYYY-MM-DD). Defaults to the day after the latest snapshot.'
+        required: false
+        type: string
+      period_end:
+        description: 'Optional explicit period end (YYYY-MM-DD). Defaults to yesterday.'
+        required: false
+        type: string
 
 permissions:
   contents: write
+
+concurrency:
+  group: sync-game-health
+  cancel-in-progress: false
 
 jobs:
   sync-telemetry:
@@ -21,21 +34,26 @@ jobs:
         with:
           node-version: 20
 
-      - name: Query GA4 and Update Game Health Data
+      - name: Test the snapshot assembler
+        run: node --test scripts/sync-game-health.test.mjs
+
+      - name: Query GA4 and persist a dated snapshot
         run: node scripts/sync-game-health.mjs
         env:
           GA4_SERVICE_ACCOUNT_KEY: ${{ secrets.GA4_SERVICE_ACCOUNT_KEY }}
           GA4_PROPERTY_ID: ${{ secrets.GA4_PROPERTY_ID || '501489186' }}
+          PERIOD_START: ${{ inputs.period_start }}
+          PERIOD_END: ${{ inputs.period_end }}
 
-      - name: Commit and push if telemetry changed
+      - name: Commit snapshot history
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if ! git diff --quiet assets/data/game-health.json; then
-            echo "Telemetry changes detected. Committing..."
-            git add assets/data/game-health.json
-            git commit -m "chore(telemetry): bi-weekly game health metrics sync"
-            git push origin main
-          else
+          git add assets/data/game-health assets/data/game-health.json
+          if git diff --cached --quiet; then
             echo "No telemetry changes to commit."
+            exit 0
           fi
+          latest=$(node -e "console.log(require('./assets/data/game-health/index.json').latest)")
+          git commit -m "chore(telemetry): game health snapshot ${latest}"
+          git push origin main
