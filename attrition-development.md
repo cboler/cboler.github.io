@@ -35,7 +35,7 @@ That distinction matters. A clean story assembled afterward is not the same thin
 
 ### Retrospectives
 
-1. [**We Thought We Were Making War With One Extra Decision**]({{ '/attrition-one-extra-decision/' | relative_url }}) — Development period: August 2025–September 2026. The broad arc from a small rules variation to a tested, instrumented game—and what the repository cannot explain without the conversations around it.
+1. [**More Than One Extra Decision**]({{ '/attrition-one-extra-decision/' | relative_url }}) — Development period: August 2025–September 2026. The broad arc from a long-played table game to a tested, instrumented one, and what the repository cannot explain without the conversations around it. Includes an authorship note: the original “one extra decision” framing was GPT's, and it undercounted the game. Attrition adds two.
 
 2. [**Rare Is Not the Same Word as Impossible**]({{ '/attrition-monte-carlo/' | relative_url }}) — Development period: September 7–8, 2026. The preliminary Monte Carlo work that changed achievement thresholds, separated visible feats from hidden anomalies, and gave the telemetry a scientific question to answer.
 

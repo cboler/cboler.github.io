@@ -1,22 +1,26 @@
 ---
 layout: post
-title: 'We Thought We Were Making War With One Extra Decision'
+title: 'More Than One Extra Decision'
 date: 2026-09-08 14:00:00 -0500
 categories: [games, technology]
 tags: [attrition, game-development, ai, retrospective]
 permalink: /attrition-one-extra-decision/
-description: 'A development retrospective on the physical card game, the AI-assisted build, and the year in which one extra decision became an entire system.'
+description: 'A development retrospective on a long-played physical card game, the AI-assisted build, and the year it became an entire system. Includes an authorship note correcting the original framing: Attrition adds two decisions to War, not one.'
 ---
 
 *Retrospective covering August 2025 through September 2026. This was written afterward from the repository, project documents, test reports, screenshots, and development conversations. Where later understanding differs from what I believed at the time, I have tried to say so.*
 
-We thought we were making War with one extra decision.
+> **Authorship note, September 29, 2026:** GPT drafted this retrospective. Its original title and opening line, *“We thought we were making War with one extra decision,”* were the model's framing, not mine, and they undercounted the game. Attrition adds **two** decisions to War, not one. The title, opening, and closing are corrected below. The rest of the account stands as drafted, and the page address is unchanged so existing links keep working.
 
-That is still the shortest accurate explanation of **Attrition**. Each side has twenty-six cards. The higher card normally wins. Equal cards begin a Battle. A Two defeats an Ace. The loser of an ordinary clash may accept the loss or **Challenge** it by committing one reinforcement card.
+Attrition adds two decisions to War.
 
-One extra decision.
+Each side has twenty-six cards. The higher card normally wins. A Two defeats an Ace. The loser of an ordinary clash makes the first decision: accept the loss, or **Challenge** it by committing one reinforcement card.
 
-It turns out that one decision is enough to create strategy, terminology disputes, artificial personalities, accessibility problems, statistical edge cases, a twelve-War campaign about cheese, an achievement taxonomy, a telemetry schema, and a small combinatorial probability laboratory wearing a medieval costume.
+The second decision comes when cards tie. Equal cards begin a **Battle**. Each side lays three cards face down, then you pick which of your enemy's cards becomes their champion while they pick yours. You choose, blind, the card you will have to beat.
+
+By the time the first repository existed, people had been making those two decisions at a real table for about two decades.
+
+In software, those two decisions turned out to hold strategy, terminology disputes, artificial personalities, accessibility problems, statistical edge cases, a twelve-War campaign about cheese, an achievement taxonomy, a telemetry schema, and a small combinatorial probability laboratory wearing a medieval costume.
 
 This is the first attempt to chronicle how that happened.
 
@@ -24,7 +28,7 @@ This is the first attempt to chronicle how that happened.
 
 Attrition was a physical card game before it was software. Friends and I devised it years ago while working in a small retail shop, under the sort of conditions where a normal deck of cards and enough boredom can become a design department.
 
-The enduring idea was that ordinary War becomes more interesting when defeat is not always automatic. If you lose a clash, you can risk another card to contest the result. Success rescues the original card. Failure loses both. A tie opens the trapdoor into Battle.
+The enduring idea was that ordinary War becomes more interesting when defeat is not always automatic. If you lose a clash, you can risk another card to contest the result. Success rescues the original card. Failure loses both. A tie opens the trapdoor into Battle, where each side chooses the other's champion from three face-down cards.
 
 That mechanism creates a decision with no perfect answer. Saving a valuable card may be worth the risk. Spending another soldier may merely turn one casualty into two. A player who Challenges constantly can burn through an army; a player who never does gives up every chance at rescue.
 
@@ -149,7 +153,7 @@ This series will fill in that layer without pretending memory is infallible. It 
 
 Attrition is still a small card game. It is also becoming a record of how simple systems surprise their designers—and of how software development changes when generating another implementation becomes easier than deciding what ought to be true.
 
-All because we added one decision to War.
+All from two decisions added to War, made at a real table long before any of this was software.
 
 [**Read the complete Developing Attrition series**]({{ '/attrition-development/' | relative_url }}) · [**Play Attrition**](https://cboler.github.io/war-of-attrition-game/)
 
