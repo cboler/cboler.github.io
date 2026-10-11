@@ -18,3 +18,8 @@ The browser ARPG and its development tools are in [`docs/moss-and-ember/`](docs/
 GitHub Pages remains configured for **Deploy from a branch → main → /(root)**. Jekyll publishes the game directory alongside the blog as ordinary static files. Once these changes are committed and pushed to `main`, play at **https://cboler.github.io/docs/moss-and-ember/**. No Pages setting change, `.nojekyll` file, custom workflow, or game build step is needed. Do not switch the Pages source to `/docs`: the blog’s Jekyll configuration, pages, and posts are still at the repository root.
 
 From the game directory, `npm start` serves a local preview and `npm test` runs the gameplay checks. See the game README for optional browser checks. The root Jekyll configuration excludes development dependencies, tests, local server scripts, and test artifacts from the published site.
+
+
+## Projects directory
+
+[`_posts/2026-10-10-projects-directory.md`](_posts/2026-10-10-projects-directory.md) is a living index of the games and apps published from this account (permalink `/projects/`). When a project ships or changes status, edit that post and bump its "Last updated" line instead of writing a new one.
