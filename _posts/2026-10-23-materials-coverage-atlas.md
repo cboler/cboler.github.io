@@ -3,7 +3,7 @@ layout: post
 title: 'Mapping the Gaps in the Materials Project'
 date: 2026-10-23 12:00:00 -0500
 categories: [technology, science]
-tags: [materials-science, materials-project, data-visualization, d3, umap, angular, pwa]
+tags: [materials-science, materials-project, data-visualization, d3, umap, angular, pwa, ai, claude]
 description: 'An interactive map of all 154,377 materials in the Materials Project, built to show where the data is thin. Near iron, 8 of the 20 most similar compounds have computed stiffness. Near portlandite, the binder in cement, only 2 do.'
 image: /docs/materials-coverage-atlas/map-stiffness.png
 ---
@@ -76,6 +76,8 @@ It's a snapshot of one database version, and a future release might fill some of
 
 ## How it's built
 
+I built this one together with Claude (Opus 5.5, in Claude Code). I brought the questions and made the calls on what to show, and Claude did most of the pipeline and app code, checked the numbers against the data, and helped write this post. It also caught a mistake in one of my early claims before it went out, which is the kind of help I want.
+
 The site is static. A Python pipeline pulls the data once through the Materials Project API, computes the categories and the UMAP layout, and writes a single JSON file. The browser app is Angular and d3, and it draws all 154,377 points on a canvas. It started from my [Angular PWA starter]({% post_url 2026-09-06-angular-pwa-starter %}), so it installs on a phone and, once you've opened it, works offline like the others in [the directory]({{ '/projects/' | relative_url }}).
 
 The data is licensed CC BY 4.0, so the attribution and database version are shown on every page. The code is MIT. I'm not affiliated with the Materials Project.
@@ -91,6 +93,6 @@ The data is licensed CC BY 4.0, so the attribution and database version are show
 
 ---
 
-I built this over three days in October, and I'm a little proud of it. It might even be useful to people who study materials for a living. If you're one of them and something here is wrong, or useful, I'd like to hear about it.
+We built this over three days in October, and I'm a little proud of it. It might even be useful to people who study materials for a living. If you're one of them and something here is wrong, or useful, I'd like to hear about it.
 
 — Chris
