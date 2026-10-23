@@ -76,7 +76,7 @@ It's a snapshot of one database version, and a future release might fill some of
 
 ## How it's built
 
-I built this one together with Claude (Opus 5.5, in Claude Code). I brought the questions and made the calls on what to show, and Claude did most of the pipeline and app code, checked the numbers against the data, and helped write this post. It also caught a mistake in one of my early claims before it went out, which is the kind of help I want.
+I built this one together with Claude (Opus 5.5, in Claude Code). I brought the questions and made the calls on what to show, and Claude did most of the pipeline and app code, checked the numbers against the data, and helped write this post. It also caught and corrected one of its own early claims before anything went out, which is the kind of help I want.
 
 The site is static. A Python pipeline pulls the data once through the Materials Project API, computes the categories and the UMAP layout, and writes a single JSON file. The browser app is Angular and d3, and it draws all 154,377 points on a canvas. It started from my [Angular PWA starter]({% post_url 2026-09-06-angular-pwa-starter %}), so it installs on a phone and, once you've opened it, works offline like the others in [the directory]({{ '/projects/' | relative_url }}).
 
