@@ -65,4 +65,4 @@ The Monte Carlo work produced estimates under simplified decision policies. Real
 
 Participation is optional. The invitation is not an argument that privacy should be traded for vague promises to “improve the experience.” It is an invitation to help investigate specific questions, with the collection boundaries and eventual findings made public.
 
-[**Play Attrition**](https://cboler.github.io/war-of-attrition-game/) · [**View the repository**](https://github.com/cboler/war-of-attrition-game)
+[**Play Attrition**](https://cboler.github.io/war-of-attrition-game/) · [**Become an Android tester**]({{ '/attrition-testers/' | relative_url }}) · [**View the repository**](https://github.com/cboler/war-of-attrition-game)

@@ -12,7 +12,7 @@ I keep starting things. Some of them get a blog post, and some of them just quie
 
 It's a **directory**, and I'll keep it current. When I ship something new, or something changes status, this page gets edited instead of a new post being written. The entries are short on purpose, and the **Status** line on each one is meant to be honest about how finished it is.
 
-*Last updated: October 10, 2026.*
+*Last updated: October 22, 2026.*
 
 Everything here runs in the browser. Most are installable PWAs that keep working offline, and none of them need an account.
 
@@ -50,11 +50,11 @@ A lane-based tactical RPG inspired by *Grand Kingdom*. Units fight across three 
 
 ### Attrition
 
-[**Play it**](https://cboler.github.io/war-of-attrition-game/) · [The full story]({{ '/attrition-development/' | relative_url }})
+[**Play it**](https://cboler.github.io/war-of-attrition-game/) · [**Test it on Android**]({{ '/attrition-testers/' | relative_url }}) · [The full story]({{ '/attrition-development/' | relative_url }})
 
 A card game that started as a variation on War, played with friends and an ordinary deck. It has its own series of posts covering the rules, the development history, the Monte Carlo analysis, and the telemetry, so it doesn't need much of a blurb here. Start at [**Developing Attrition**]({{ '/attrition-development/' | relative_url }}).
 
-**Status:** playable in your browser and still being tuned.
+**Status:** playable in your browser; Android closed test open to anyone, ahead of a Google Play release.
 
 ### Moss & Ember
 
