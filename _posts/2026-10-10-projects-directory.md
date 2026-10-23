@@ -12,7 +12,7 @@ I keep starting things. Some of them get a blog post, and some of them just quie
 
 It's a **directory**, and I'll keep it current. When I ship something new, or something changes status, this page gets edited instead of a new post being written. The entries are short on purpose, and the **Status** line on each one is meant to be honest about how finished it is.
 
-*Last updated: October 22, 2026.*
+*Last updated: October 23, 2026.*
 
 Everything here runs in the browser. Most are installable PWAs that keep working offline, and none of them need an account.
 
@@ -76,6 +76,14 @@ A math curriculum for kids that starts from the human story behind each idea. Ad
 
 **Status:** very much a **work in progress**. Eight lessons exist so far, from addition through the first proof in Euclid's *Elements*. The content is still growing, and it will change a lot.
 
+### Materials Coverage Atlas
+
+[**Open it**](https://cboler.github.io/materials-coverage-atlas/) · [Source](https://github.com/cboler/materials-coverage-atlas) · [The post]({% post_url 2026-10-23-materials-coverage-atlas %})
+
+An interactive map of all 154,377 materials in the [Materials Project](https://materialsproject.org), an open database of computer-simulated crystals. Similar materials sit close together, and overlays show where the database's data runs thin. Only about 8% of entries have computed stiffness, and the gaps cluster around cement and stone rather than steel. Construction materials like calcite, gypsum, quartz, and iron are pinned as landmarks, each with a list of its nearest neighbors.
+
+**Status:** working and published, built from Materials Project version 2026.09.28. The categories are documented rules of thumb, not property predictions.
+
 ### Frame / Field (FMV visualizer)
 
 [**Open it**](https://cboler.github.io/fmv-visualizer/) · [Source](https://github.com/cboler/fmv-visualizer)
@@ -96,7 +104,7 @@ Two takes on the same batting-practice spray-chart spec: tap where the ball land
 
 [**Live demo**](https://cboler.github.io/angular-pwa-starter/) · [Source](https://github.com/cboler/angular-pwa-starter) · [The post]({% post_url 2026-09-06-angular-pwa-starter %})
 
-The GitHub template repository I use to start new Angular PWAs. It has the service worker, manifest, Pages deployment, and test plumbing already wired up. Frame / Field started from it.
+The GitHub template repository I use to start new Angular PWAs. It has the service worker, manifest, Pages deployment, and test plumbing already wired up. Frame / Field and the Materials Coverage Atlas started from it.
 
 ---
 

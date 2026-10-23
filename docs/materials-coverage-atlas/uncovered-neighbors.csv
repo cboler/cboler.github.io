@@ -1,0 +1,141 @@
+anchor,rank,formula,material_ids,lowest_e_above_hull_eV_atom,experimentally_observed,mp_link
+Calcite,2,Ca5Mg(CO3)6,mp-aaahikim mp-aaahikoc,0.003,False,https://next-gen.materialsproject.org/materials/mp-aaahikim
+Calcite,3,Ca15Mg(CO3)16,mp-aaahikpx,0.004,False,https://next-gen.materialsproject.org/materials/mp-aaahikpx
+Calcite,4,Ca2Mg(CO3)3,mp-aaacpyfs mp-aaahikir mp-aaahiknv,0.003,False,https://next-gen.materialsproject.org/materials/mp-aaacpyfs
+Calcite,5,Ca3Mg(CO3)4,mp-aaahikhx mp-aaahikjm mp-aaahikxt,0.003,False,https://next-gen.materialsproject.org/materials/mp-aaahikhx
+Calcite,7,Ca5Si2C2O13,mp-aaaaajzt,0.005,True,https://next-gen.materialsproject.org/materials/mp-aaaaajzt
+Calcite,8,Na2Ca2(CO3)3,mp-aaabfsod,0.0,True,https://next-gen.materialsproject.org/materials/mp-aaabfsod
+Calcite,9,Ca2MgFe(CO3)4,mp-aaacrwkj,0.001,False,https://next-gen.materialsproject.org/materials/mp-aaacrwkj
+Calcite,10,K2Ca2(CO3)3,mp-aaabfokl,0.01,False,https://next-gen.materialsproject.org/materials/mp-aaabfokl
+Calcite,11,Ca10P6CO27,mp-aaacqbau,0.0,False,https://next-gen.materialsproject.org/materials/mp-aaacqbau
+Calcite,12,Ca2CO3F2,mp-aaaaajgg,0.028,True,https://next-gen.materialsproject.org/materials/mp-aaaaajgg
+Calcite,13,CaMg3(CO3)4,mp-aaaaajqy mp-aaahikpz mp-aaahiklg,0.004,True,https://next-gen.materialsproject.org/materials/mp-aaaaajqy
+Calcite,14,SrCa(CO3)2,mp-aaabfvxd,0.009,True,https://next-gen.materialsproject.org/materials/mp-aaabfvxd
+Calcite,15,Ca5Si2CO11,mp-aaaaakbk,0.01,True,https://next-gen.materialsproject.org/materials/mp-aaaaakbk
+Calcite,16,CaMg2(CO3)3,mp-aaahikph mp-aaahilqk mp-aaahikke,0.004,False,https://next-gen.materialsproject.org/materials/mp-aaahikph
+Calcite,18,Ca10Si3S3(ClO12)2,mp-aaaackjr mp-aaacrwdi,0.056,False,https://next-gen.materialsproject.org/materials/mp-aaaackjr
+Calcite,19,Ca19Mg2(PO4)14,mp-aaacrxno,0.0,False,https://next-gen.materialsproject.org/materials/mp-aaacrxno
+Calcite,20,Ca5Si2SO12,mp-aaaaajud,0.004,True,https://next-gen.materialsproject.org/materials/mp-aaaaajud
+Gypsum,1,CaH4SO6,mp-aaabqwep,0.036,True,https://next-gen.materialsproject.org/materials/mp-aaabqwep
+Gypsum,2,CaPH5O6,mp-aaaabkcb,0.016,True,https://next-gen.materialsproject.org/materials/mp-aaaabkcb
+Gypsum,3,CaP2(H2O3)3,mp-aaaboeuo,0.001,True,https://next-gen.materialsproject.org/materials/mp-aaaboeuo
+Gypsum,4,CaPH3O4,mp-aaaabjtq,0.005,True,https://next-gen.materialsproject.org/materials/mp-aaaabjtq
+Gypsum,5,KCa2P4H11O18,mp-aaabnrgq,0.004,True,https://next-gen.materialsproject.org/materials/mp-aaabnrgq
+Gypsum,6,LiCaP3H8O13,mp-aaabparj,0.036,True,https://next-gen.materialsproject.org/materials/mp-aaabparj
+Gypsum,7,CaP2H5NO7,mp-aaacrcrf,0.0,False,https://next-gen.materialsproject.org/materials/mp-aaacrcrf
+Gypsum,8,CaH2CO4,mp-aaacrvgy mp-aaabfxqm,0.023,True,https://next-gen.materialsproject.org/materials/mp-aaacrvgy
+Gypsum,9,Ca2P2H8O11,mp-aaabfnuk,0.016,True,https://next-gen.materialsproject.org/materials/mp-aaabfnuk
+Gypsum,10,K2MgH8(SO6)2,mp-aaacrrac mp-aaaabkpq mp-aaabnukw,0.0,True,https://next-gen.materialsproject.org/materials/mp-aaacrrac
+Gypsum,11,CaP2(HO2)4,mp-aaaabkaz,0.006,True,https://next-gen.materialsproject.org/materials/mp-aaaabkaz
+Gypsum,12,Ca3GeH12S2O17,mp-aaacqdib,0.004,True,https://next-gen.materialsproject.org/materials/mp-aaacqdib
+Gypsum,13,Ca3B6(H4O5)4,mp-aaabogbh,0.01,True,https://next-gen.materialsproject.org/materials/mp-aaabogbh
+Gypsum,14,KH5S2O9,mp-aaabeuxr,0.0,True,https://next-gen.materialsproject.org/materials/mp-aaabeuxr
+Gypsum,15,CaB3H7O9,mp-aaabozsw,0.005,True,https://next-gen.materialsproject.org/materials/mp-aaabozsw
+Gypsum,16,Ca3P4H20(NO10)2,mp-aaabofzl,0.016,True,https://next-gen.materialsproject.org/materials/mp-aaabofzl
+Gypsum,17,CaAl2H12(CO7)2,mp-aaacpzet,0.005,True,https://next-gen.materialsproject.org/materials/mp-aaacpzet
+Gypsum,18,CaP3H10NO12,mp-aaaboeeg,0.054,True,https://next-gen.materialsproject.org/materials/mp-aaaboeeg
+Gypsum,19,Ca2AlH8S2Cl(O6F)2,mp-aaabkpvy,0.018,True,https://next-gen.materialsproject.org/materials/mp-aaabkpvy
+Gypsum,20,CaB2(H2O3)2,mp-aaabnqna mp-aaabsave,0.015,True,https://next-gen.materialsproject.org/materials/mp-aaabnqna
+Portlandite,1,Ca(HO)2,mp-aaabjqzs mp-aaabkptw mp-aaabjqzr,0.007,True,https://next-gen.materialsproject.org/materials/mp-aaabjqzs
+Portlandite,2,Ca3Al2(HO)12,mp-aaaabjio,0.031,True,https://next-gen.materialsproject.org/materials/mp-aaaabjio
+Portlandite,3,Ca2AlH10BrO8,mp-aaabnooy mp-aaacrvvv,0.019,False,https://next-gen.materialsproject.org/materials/mp-aaabnooy
+Portlandite,4,Ca2AlH10ClO8,mp-aaaackkd mp-aaacrvxc,0.031,False,https://next-gen.materialsproject.org/materials/mp-aaaackkd
+Portlandite,5,Ca4Al2H22CO20,mp-aaabohev,0.013,True,https://next-gen.materialsproject.org/materials/mp-aaabohev
+Portlandite,6,Ca3Si2(H3O5)2,mp-aaabnpvg,0.007,True,https://next-gen.materialsproject.org/materials/mp-aaabnpvg
+Portlandite,7,Ca6Si2H6O13,mp-aaabnrco,0.006,False,https://next-gen.materialsproject.org/materials/mp-aaabnrco
+Portlandite,8,CaAsH5O6,mp-aaaabjrs mp-aaabqyqx,0.018,True,https://next-gen.materialsproject.org/materials/mp-aaaabjrs
+Portlandite,9,Ca2AlH10IO8,mp-aaabmnwa,0.01,False,https://next-gen.materialsproject.org/materials/mp-aaabmnwa
+Portlandite,10,Ca3GeH12S2O17,mp-aaacqdib,0.004,True,https://next-gen.materialsproject.org/materials/mp-aaacqdib
+Portlandite,11,CaAs(HO)7,mp-aaaabkax,0.015,True,https://next-gen.materialsproject.org/materials/mp-aaaabkax
+Portlandite,12,Ca2P2H8O11,mp-aaabfnuk,0.016,True,https://next-gen.materialsproject.org/materials/mp-aaabfnuk
+Portlandite,13,CaZn2(H5O4)2,mp-aaacqkmm mp-aaabogfy,0.005,True,https://next-gen.materialsproject.org/materials/mp-aaacqkmm
+Portlandite,14,Na2CaH10C2O11,mp-aaaabjvx,0.004,True,https://next-gen.materialsproject.org/materials/mp-aaaabjvx
+Portlandite,16,Ca4As3H9O16,mp-aaacqgnm,0.005,True,https://next-gen.materialsproject.org/materials/mp-aaacqgnm
+Portlandite,17,CaAsH3O5,mp-aaabpbbk,0.014,True,https://next-gen.materialsproject.org/materials/mp-aaabpbbk
+Portlandite,18,Li3V(H6O5)2,mp-aaacpwzi,0.008,True,https://next-gen.materialsproject.org/materials/mp-aaacpwzi
+Portlandite,19,CaH4SeO6,mp-aaaabkhq,0.007,True,https://next-gen.materialsproject.org/materials/mp-aaaabkhq
+Alite,2,Ca11Si4SO18,mp-aaabfpts,0.025,True,https://next-gen.materialsproject.org/materials/mp-aaabfpts
+Alite,3,Ca11AlSi3ClO18,mp-aaabmnpm,0.042,False,https://next-gen.materialsproject.org/materials/mp-aaabmnpm
+Alite,5,Ca8Si5O18,mp-aaacgagg,0.001,True,https://next-gen.materialsproject.org/materials/mp-aaacgagg
+Alite,6,Ca3Si2O7,mp-aaaaafvg mp-aaabhidw,0.002,True,https://next-gen.materialsproject.org/materials/mp-aaaaafvg
+Alite,7,Ca5Si2CO11,mp-aaaaakbk,0.01,True,https://next-gen.materialsproject.org/materials/mp-aaaaakbk
+Alite,8,Ca5Si2SO12,mp-aaaaajud,0.004,True,https://next-gen.materialsproject.org/materials/mp-aaaaajud
+Alite,9,Ca20Si3Ge9O44,mp-aaacrwmh,0.021,False,https://next-gen.materialsproject.org/materials/mp-aaacrwmh
+Alite,11,Ca2GeO4,mp-aaabfxjj,0.0,True,https://next-gen.materialsproject.org/materials/mp-aaabfxjj
+Alite,12,Na2Ca17Al12O36,mp-aaacrouc,0.039,False,https://next-gen.materialsproject.org/materials/mp-aaacrouc
+Alite,13,Ca4P2O9,mp-aaaaahul,0.0,True,https://next-gen.materialsproject.org/materials/mp-aaaaahul
+Alite,14,Ca3Mg(SiO4)2,mp-aaabftop mp-aaabfttp,0.038,True,https://next-gen.materialsproject.org/materials/mp-aaabftop
+Alite,15,Ca5Si(PO6)2,mp-aaacrvrs,0.0,False,https://next-gen.materialsproject.org/materials/mp-aaacrvrs
+Alite,16,Ca10Si3S3(ClO12)2,mp-aaacrwdi mp-aaaackjr,0.056,False,https://next-gen.materialsproject.org/materials/mp-aaacrwdi
+Alite,17,Ca19Si6S6(ClO24)2,mp-aaabnogl,0.059,False,https://next-gen.materialsproject.org/materials/mp-aaabnogl
+Alite,18,Ca4Si2O7F2,mp-aaabfwqt,0.0,True,https://next-gen.materialsproject.org/materials/mp-aaabfwqt
+Alite,19,Ca10P6SO24,mp-aaacrwfb mp-aaabnbmm,0.0,False,https://next-gen.materialsproject.org/materials/mp-aaacrwfb
+Alite,20,Ca2BClO3,mp-aaabfnxv,0.059,True,https://next-gen.materialsproject.org/materials/mp-aaabfnxv
+Belite,2,Ca8Si5O18,mp-aaacgagg,0.001,True,https://next-gen.materialsproject.org/materials/mp-aaacgagg
+Belite,3,Ca3Si2O7,mp-aaaaafvg mp-aaabhidw,0.002,True,https://next-gen.materialsproject.org/materials/mp-aaaaafvg
+Belite,4,Ca5Si2CO11,mp-aaaaakbk,0.01,True,https://next-gen.materialsproject.org/materials/mp-aaaaakbk
+Belite,5,Ca5Si2SO12,mp-aaaaajud,0.004,True,https://next-gen.materialsproject.org/materials/mp-aaaaajud
+Belite,7,Ca3Mg(SiO4)2,mp-aaabfttp mp-aaabftop,0.038,True,https://next-gen.materialsproject.org/materials/mp-aaabfttp
+Belite,8,Ca5Si(PO6)2,mp-aaacrvrs,0.0,False,https://next-gen.materialsproject.org/materials/mp-aaacrvrs
+Belite,9,Ca11Si4SO18,mp-aaabfpts,0.025,True,https://next-gen.materialsproject.org/materials/mp-aaabfpts
+Belite,11,Li2Ca4Si4O13,mp-aaabfqrx,0.005,True,https://next-gen.materialsproject.org/materials/mp-aaabfqrx
+Belite,12,Ca11AlSi3ClO18,mp-aaabmnpm,0.042,False,https://next-gen.materialsproject.org/materials/mp-aaabmnpm
+Belite,13,Ca4Si2O7F2,mp-aaabfwqt,0.0,True,https://next-gen.materialsproject.org/materials/mp-aaabfwqt
+Belite,14,Ca3Si2GeO9,mp-aaacrwhc,0.008,False,https://next-gen.materialsproject.org/materials/mp-aaacrwhc
+Belite,15,Ca10Si3S3(ClO12)2,mp-aaaackjr mp-aaacrwdi,0.056,False,https://next-gen.materialsproject.org/materials/mp-aaaackjr
+Belite,16,Ca5Si2C2O13,mp-aaaaajzt,0.005,True,https://next-gen.materialsproject.org/materials/mp-aaaaajzt
+Belite,17,Ca4P2O9,mp-aaaaahul,0.0,True,https://next-gen.materialsproject.org/materials/mp-aaaaahul
+Belite,20,Ca19Si6S6(ClO24)2,mp-aaabnogl,0.059,False,https://next-gen.materialsproject.org/materials/mp-aaabnogl
+Quartz,2,Si5P6O25,mp-aaaaaevx,0.0,True,https://next-gen.materialsproject.org/materials/mp-aaaaaevx
+Quartz,3,Al2Si2O7,mp-aaabqyyd,0.023,False,https://next-gen.materialsproject.org/materials/mp-aaabqyyd
+Quartz,4,SiP2O7,mp-aaabfoqw mp-aaaaahbl mp-aaaabawj,0.0,True,https://next-gen.materialsproject.org/materials/mp-aaabfoqw
+Quartz,5,Al2Si4O11,mp-aaabogbn,0.037,True,https://next-gen.materialsproject.org/materials/mp-aaabogbn
+Quartz,8,Al2(SO4)3,mp-aaafyklc mp-aaaaagnx,0.0,True,https://next-gen.materialsproject.org/materials/mp-aaafyklc
+Quartz,9,Al7Si3BO18,mp-aaacfzyz,0.019,True,https://next-gen.materialsproject.org/materials/mp-aaacfzyz
+Quartz,10,Al(PO3)3,mp-aaaaausx mp-aaabfwki mp-aaabetqj,0.01,True,https://next-gen.materialsproject.org/materials/mp-aaaaausx
+Quartz,11,Al9Si2BO19,mp-aaacryed,0.014,False,https://next-gen.materialsproject.org/materials/mp-aaacryed
+Quartz,12,Al2Si(O2F)2,mp-aaaaajho,0.0,True,https://next-gen.materialsproject.org/materials/mp-aaaaajho
+Quartz,13,Al4(B2O5)3,mp-aaaabuma,0.0,True,https://next-gen.materialsproject.org/materials/mp-aaaabuma
+Quartz,14,Al4B2O9,mp-aaacrygl,0.0,False,https://next-gen.materialsproject.org/materials/mp-aaacrygl
+Quartz,15,AlGa(PO4)2,mp-aaacrxzg,0.013,False,https://next-gen.materialsproject.org/materials/mp-aaacrxzg
+Quartz,16,Si2As2O7,mp-aaabrwgp,0.065,False,https://next-gen.materialsproject.org/materials/mp-aaabrwgp
+Quartz,19,Si2Ge3P6O25,mp-aaabfqly,0.0,True,https://next-gen.materialsproject.org/materials/mp-aaabfqly
+Corundum,4,Al9Si2BO19,mp-aaacryed,0.014,False,https://next-gen.materialsproject.org/materials/mp-aaacryed
+Corundum,5,Al4B2O9,mp-aaacrygl,0.0,False,https://next-gen.materialsproject.org/materials/mp-aaacrygl
+Corundum,6,Al7Si3BO18,mp-aaacfzyz,0.019,True,https://next-gen.materialsproject.org/materials/mp-aaacfzyz
+Corundum,8,Al2Si(O2F)2,mp-aaaaajho,0.0,True,https://next-gen.materialsproject.org/materials/mp-aaaaajho
+Corundum,9,Al2Si2O7,mp-aaabqyyd,0.023,False,https://next-gen.materialsproject.org/materials/mp-aaabqyyd
+Corundum,10,AlOF,mp-aaacszxk,0.022,False,https://next-gen.materialsproject.org/materials/mp-aaacszxk
+Corundum,11,Al6B5(O5F)3,mp-aaaaajze,0.0,True,https://next-gen.materialsproject.org/materials/mp-aaaaajze
+Corundum,12,Al11NO15,mp-aaabmlnu,0.056,False,https://next-gen.materialsproject.org/materials/mp-aaabmlnu
+Corundum,13,Al17(NO7)3,mp-aaabmlfs,0.069,False,https://next-gen.materialsproject.org/materials/mp-aaabmlfs
+Corundum,14,Al10ZnO16,mp-aaabrhlj,0.021,False,https://next-gen.materialsproject.org/materials/mp-aaabrhlj
+Corundum,15,Al4(B2O5)3,mp-aaaabuma,0.0,True,https://next-gen.materialsproject.org/materials/mp-aaaabuma
+Corundum,16,Al8SiO14,mp-aaabryqf mp-aaacrxvu,0.057,False,https://next-gen.materialsproject.org/materials/mp-aaabryqf
+Corundum,18,Al3NO3,mp-aaabmlkr mp-aaacrxyx,0.097,False,https://next-gen.materialsproject.org/materials/mp-aaabmlkr
+Corundum,19,Al10Si2O19,mp-aaacszzr mp-aaacszyh mp-aaaabqeh,0.057,False,https://next-gen.materialsproject.org/materials/mp-aaacszzr
+Corundum,20,Al2(SO4)3,mp-aaaaagnx mp-aaafyklc,0.0,True,https://next-gen.materialsproject.org/materials/mp-aaaaagnx
+Iron,2,MnFe4,mp-aaacrndz,0.036,False,https://next-gen.materialsproject.org/materials/mp-aaacrndz
+Iron,5,CrFe4,mp-aaacrtys,0.03,False,https://next-gen.materialsproject.org/materials/mp-aaacrtys
+Iron,7,Fe3Cu,mp-aaacrsil mp-aaacpjyl mp-aaacpjwm,0.07,False,https://next-gen.materialsproject.org/materials/mp-aaacrsil
+Iron,10,VFe4,mp-aaacrfhx,0.089,False,https://next-gen.materialsproject.org/materials/mp-aaacrfhx
+Iron,11,Fe7Co,mp-aaacjmnr,0.007,False,https://next-gen.materialsproject.org/materials/mp-aaacjmnr
+Iron,12,Fe2Ni,mp-aaacrrrt mp-aaacjiht,0.089,False,https://next-gen.materialsproject.org/materials/mp-aaacrrrt
+Iron,13,ZnFe3,mp-aaacreda,0.036,False,https://next-gen.materialsproject.org/materials/mp-aaacreda
+Iron,15,GaFe4,mp-aaacrrzd,0.107,False,https://next-gen.materialsproject.org/materials/mp-aaacrrzd
+Iron,16,Fe3Pd,mp-aaacrrty mp-aaaabtih,0.087,True,https://next-gen.materialsproject.org/materials/mp-aaacrrty
+Iron,17,TiNbFe4,mp-aaacrgbw,0.014,False,https://next-gen.materialsproject.org/materials/mp-aaacrgbw
+Iron,19,AlFe4,mp-aaacrxzk,0.096,False,https://next-gen.materialsproject.org/materials/mp-aaacrxzk
+Iron,20,Fe3Mo,mp-aaacebux,0.084,False,https://next-gen.materialsproject.org/materials/mp-aaacebux
+Aluminum,2,Al4Si,mp-aaacrwtk,0.115,False,https://next-gen.materialsproject.org/materials/mp-aaacrwtk
+Aluminum,3,MnAl12,mp-aaackvjx,0.005,True,https://next-gen.materialsproject.org/materials/mp-aaackvjx
+Aluminum,8,Al27(FeNi2)2,mp-aaacryhs,0.001,False,https://next-gen.materialsproject.org/materials/mp-aaacryhs
+Aluminum,9,Al9Fe2,mp-aaacpuzq,0.018,True,https://next-gen.materialsproject.org/materials/mp-aaacpuzq
+Aluminum,10,MnAl12Fe,mp-aaacrnfk,0.005,False,https://next-gen.materialsproject.org/materials/mp-aaacrnfk
+Aluminum,12,Al3Ge,mp-aaacpihn,0.097,False,https://next-gen.materialsproject.org/materials/mp-aaacpihn
+Aluminum,15,MnAl24Cr,mp-aaacrnha,0.005,False,https://next-gen.materialsproject.org/materials/mp-aaacrnha
+Aluminum,16,Al9Co2Ni,mp-aaacrxri,0.02,False,https://next-gen.materialsproject.org/materials/mp-aaacrxri
+Aluminum,17,Al13Co4,mp-aaaabtmt mp-aaacqerw,0.011,True,https://next-gen.materialsproject.org/materials/mp-aaaabtmt
+Aluminum,18,Mn4Al19,mp-aaaabtec,0.014,True,https://next-gen.materialsproject.org/materials/mp-aaaabtec
+Aluminum,19,Al19Co6,mp-aaacrdmg,0.009,False,https://next-gen.materialsproject.org/materials/mp-aaacrdmg
+Aluminum,20,Al3Co,mp-aaacrxmd,0.011,False,https://next-gen.materialsproject.org/materials/mp-aaacrxmd
