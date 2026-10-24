@@ -93,6 +93,6 @@ The data is licensed CC BY 4.0, so the attribution and database version are show
 
 ---
 
-We built this over three days in October, and I'm a little proud of it. It might even be useful to people who study materials for a living. If you're one of them and something here is wrong, or useful, I'd like to hear about it.
+We built this over three days in October, and I'm a little proud of it. It might even be useful to people who study materials for a living. If you're one of them and something here is wrong, or useful, I'd like to hear about it. The best place for that is the [discussion on the Materials Project forum](https://matsci.org/t/materials-coverage-atlas-an-interactive-map-of-mp-showing-where-elastic-data-is-thin/67584).
 
 — Chris
