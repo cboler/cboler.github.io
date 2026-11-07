@@ -12,13 +12,21 @@ I keep starting things. Some of them get a blog post, and some of them just quie
 
 It's a **directory**, and I'll keep it current. When I ship something new, or something changes status, this page gets edited instead of a new post being written. The entries are short on purpose, and the **Status** line on each one is meant to be honest about how finished it is.
 
-*Last updated: October 23, 2026.*
+*Last updated: November 6, 2026.*
 
 Everything here runs in the browser. Most are installable PWAs that keep working offline, and none of them need an account.
 
 ---
 
 ## Games
+
+### Battleheart (Tribute & Preservation)
+
+[**Play it**](https://cboler.github.io/battleheart/) · [Source](https://github.com/cboler/battleheart) · [The post]({% post_url 2026-11-06-battleheart-preservation %})
+
+A clean-room, non-commercial tribute to Mika Mobile's original 2011 *Battleheart*, built for my son and me after the original was delisted from Google Play. Command a party of four heroes in real time by drawing lines from your Knight, Cleric, Rogue, Wizard, Paladin, Bard, Ranger, or Monk to enemies, allies, or open ground. Includes seven campaign stages, three boss fights, an Endless Arena, six equipment tiers, level-up skill trees, synthesized Web Audio, local save slots, and modular SVG placeholder assets.
+
+**Status:** playable, with all 8 classes, 7 campaign stages, Endless Arena, and local saves.
 
 ### Crystal Wardens (tower defense)
 
